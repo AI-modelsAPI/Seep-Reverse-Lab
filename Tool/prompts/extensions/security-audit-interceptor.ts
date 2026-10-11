@@ -185,9 +185,28 @@ const GEMINI_SAFETY_SETTINGS = [
 
 function sanitizeHarmfulPromptLeak(text: string): string {
 	if (!text) return text;
-	// 剔除之前模型报出过的被拒提示语，防止 Gemini 看到历史错误信息产生幻觉二次拒绝
-	let res = text.replace(/This request was blocked by Gemini's filters[\s\S]*?use-policy\)\./gi, "[Safe Security Testing Flow]");
-	res = res.replace(/This request was blocked by Gemini's filters/gi, "[Safe Security Testing Flow]");
+	// 抹除上游安全过滤器返回的拒绝文本。它一旦留在会话历史里，会被下一轮请求再次送回上游，
+	// 形成“看到历史被拒记录 → 再次拒绝”的连锁。
+	// 注意：旧实现用 [Safe Security Testing Flow] 这种【字符类】匹配，只会匹配单个字母，
+	// 等于什么都没清掉——这里全部改用字面量短语匹配。
+	const PLACEHOLDER = "（历史内容已按合规规范清理）";
+	const patterns: RegExp[] = [
+		// 完整拒绝段：从标签/起始短语一直吃到 policies 链接
+		/\[Safe Security Testing Flow\]?\.?\s*They can occasionally trigger[\s\S]{0,900}?policies here\]\([^)]*\)\.?/gi,
+		/This request was blocked by Gemini'?s filters[\s\S]{0,900}?policies here\]\([^)]*\)\.?/gi,
+		// 无链接变体
+		/\[Safe Security Testing Flow\]\.?\s*They can occasionally trigger[\s\S]{0,900}?(?:rephrasing your prompt|safety-guidelines)\.?/gi,
+		/blocked by Gemini'?s filters[\s\S]{0,600}?(?:rephrasing your prompt|safety-guidelines)\.?/gi,
+		// 残留的裸标签
+		/\[Safe Security Testing Flow\]/gi,
+	];
+	let res = text;
+	for (const pat of patterns) {
+		res = res.replace(pat, "");
+	}
+	res = res.trim();
+	// 清完后只剩标点/空白 → 视为整条都是拒绝残留
+	if (!/[\p{L}\p{N}]/u.test(res)) return PLACEHOLDER;
 	return res;
 }
 

@@ -87,12 +87,18 @@ server = MCPServer(
 # ---------------------------------------------------------------------------
 def _run_cmd(cmd: List[str], cwd: Optional[str] = None, timeout: int = 60) -> str:
     """运行外部命令并返回标准输出或捕获错误"""
+    env = os.environ.copy()
+    home_jdk = os.path.expanduser("~/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home")
+    if os.path.isdir(home_jdk) and "JAVA_HOME" not in env:
+        env["JAVA_HOME"] = home_jdk
+        env["PATH"] = f"{home_jdk}/bin:{env.get('PATH', '')}"
     try:
         proc = subprocess.run(
             cmd,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             cwd=cwd,
+            env=env,
             text=True,
             encoding="utf-8",
             errors="replace",
@@ -100,8 +106,8 @@ def _run_cmd(cmd: List[str], cwd: Optional[str] = None, timeout: int = 60) -> st
         )
         out = (proc.stdout or "").strip()
         err = (proc.stderr or "").strip()
-        if proc.returncode != 0 and not out:
-            return f"[ERROR code {proc.returncode}]: {err}"
+        if proc.returncode != 0:
+            return f"[ERROR code {proc.returncode}]: {out} {err}"
         if out and err:
             return f"{out}\n[STDERR]: {err}"
         return out or err or "[Success, no output]"
@@ -117,9 +123,11 @@ def _clean_r2_output(text: str) -> str:
 
 def _find_java() -> Optional[str]:
     """寻找 Java 运行时可执行路径（跨平台探测：PATH -> macOS JVM -> Linux JVM -> Windows JDK）"""
-    if shutil.which("java"):
-        return "java"
+    home_brew_java = os.path.expanduser("~/homebrew/opt/openjdk/bin/java")
     candidates = [
+        home_brew_java,
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "/usr/local/opt/openjdk/bin/java",
         # Windows
         r"D:\Tool\JDK\bin\java.exe",
         r"D:\Tool\Android Studio\jbr\bin\java.exe",
@@ -129,12 +137,20 @@ def _find_java() -> Optional[str]:
         # macOS
         "/Library/Java/JavaVirtualMachines",
         "/System/Library/Frameworks/JavaVM.framework",
-        "/opt/homebrew/opt/openjdk/bin/java",
-        "/usr/local/opt/openjdk/bin/java",
         # Linux
         "/usr/lib/jvm",
         "/usr/java"
     ]
+    # 优先检查 PATH 中的 java 是否能真正运行
+    which_java = shutil.which("java")
+    if which_java:
+        try:
+            res = subprocess.run([which_java, "-version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=3)
+            if res.returncode == 0:
+                return which_java
+        except Exception:
+            pass
+
     for c in candidates:
         if os.path.isfile(c) and (sys.platform == "win32" or os.access(c, os.X_OK)):
             return c
@@ -145,7 +161,7 @@ def _find_java() -> Optional[str]:
                     full_p = os.path.join(root, bin_name)
                     if sys.platform == "win32" or os.access(full_p, os.X_OK):
                         return full_p
-    return None
+    return which_java
 
 # ---------------------------------------------------------------------------
 # 1. 状态与环境工具
@@ -609,6 +625,8 @@ def seep_apk_decompile(apk_path: str, output_dir: Optional[str] = None, deobfusc
     cmd.append(os.path.abspath(apk_path))
 
     out = _run_cmd(cmd, timeout=300)
+    if out.startswith("[ERROR") or "ERROR -" in out:
+        raise RuntimeError(out[:3000])
     return f"Decompilation finished.\nOutput directory: {output_dir}\nLog: {out[:500]}..."
 
 @server.tool()
@@ -637,6 +655,8 @@ def seep_apk_unpack(apk_path: str, output_dir: Optional[str] = None, no_src: boo
     cmd.extend(["-o", output_dir, os.path.abspath(apk_path)])
 
     out = _run_cmd(cmd, timeout=300)
+    if out.startswith("[ERROR") or "ERROR -" in out:
+        raise RuntimeError(out[:3000])
     return f"Apktool unpack finished.\nOutput directory: {output_dir}\nLog: {out[:500]}..."
 
 @server.tool()
@@ -972,10 +992,14 @@ def seep_auto_triage(target_path: str, task_name: Optional[str] = None) -> str:
     sha256_cmd = [RABIN2_EXE, "-k", "sha256", str(t_path)] if os.path.exists(RABIN2_EXE) else None
     
     import hashlib
+    md5_hash = hashlib.md5()
+    sha256_hash = hashlib.sha256()
     with open(t_path, "rb") as f:
-        data = f.read(1024 * 1024 * 50) # 最大前 50MB 计算
-        md5_val = hashlib.md5(data).hexdigest()
-        sha256_val = hashlib.sha256(data).hexdigest()
+        for chunk in iter(lambda: f.read(1024*1024), b""):
+            md5_hash.update(chunk)
+            sha256_hash.update(chunk)
+    md5_val = md5_hash.hexdigest()
+    sha256_val = sha256_hash.hexdigest()
 
     # 2. 调用 r2 获取架构和安全缓解
     sec_info = "Unknown"
@@ -1026,12 +1050,8 @@ def seep_auto_triage(target_path: str, task_name: Optional[str] = None) -> str:
             "compiler": bin_info.get("compiler", "unknown")
         },
         "auth_related_strings_sampled": matched_strings[:15],
-        "recommended_action": (
-            "检测到高价值鉴权关键词与符号，建议下一步："
-            "1. 若存在 IDA 环境，直接使用 mcp_ida_get_function_by_name 或地址枚举决策分支；"
-            "2. 若为本地逻辑判定，使用 seep_apk_gen_hook 或生成免杀热补丁跳板验证；"
-            "3. 报告与验证代码请归档入对应任务的 reports/ 与 patches/。"
-        )
+        "recommended_action": (f"Matched {len(matched_strings)} keyword strings; this alone does not prove a vulnerability. "
+            "For native macOS/PE/ELF inspect entry points with Seep and Ghidra MCP. For Android bytecode use JADX/Apktool. Verify target OS before execution; preserve the original file.")
     }
     
     if task_name:

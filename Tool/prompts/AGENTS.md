@@ -157,3 +157,40 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\setup\verify.ps1 -Detailed
 | IDA Pro 自动化联动 | `Tool/skill/ida-reverse/SKILL.md` |
 | 逆向知识库 | `Tool/mcp/Tool/reverselab/kb/` |
 | seep MCP 服务 | `Tool/mcp/seep_mcp_server.py` |
+
+<!-- seep-android-avd:begin (本机 Android 测试环境规范，所有进入 Lab Mode 的模型必读) -->
+# 本机 Android 测试环境（强制使用，无需用户提醒）
+
+**遇到任何 Android 动态调试 / 逆向验证 / Frida hook / APK 运行验证任务，一律使用本机 AVD 模拟器，不要询问、不要换其他方案。**
+
+| 项目 | 值 |
+|---|---|
+| AVD 名称 | `re_lab`（Android 14 / API 34, x86_64, 720p, 2G RAM, 2 核） |
+| SDK 根 | `~/Library/Android/sdk` |
+| 启动命令 | `emulator -avd re_lab -no-snapshot -no-boot-anim -gpu swiftshader_indirect &` |
+| 启动后等就绪 | 循环 `adb -s emulator-5554 shell getprop sys.boot_completed` 直到输出 `1`（约 60-90 秒） |
+| root | `adb -s emulator-5554 root`（一条命令，已验证 uid=0） |
+| frida-server | `/data/local/tmp/frida-server16`，启动：`adb -s emulator-5554 shell "pkill frida-server; nohup /data/local/tmp/frida-server16 >/dev/null 2>&1 &"` |
+| Frida 版本 | 本机与设备均为 **16.7.19**（不要用 17.x，Java bridge 移除会导致 seep hook 模板失效） |
+| 连通验证 | `frida-ps -U` 应列出进程 |
+| 装目标 App | `adb -s emulator-5554 install xxx.apk`（无 Play 商店，走 sideload） |
+| 抓包 | 代理指向宿主机 IP:8080（Burp/mitmproxy），root 后可直接装系统级证书 |
+| 本机 PATH | 已写入 ~/.zshrc：ANDROID_HOME + emulator + platform-tools + cmdline-tools |
+
+**纪律**：模拟器未启动时先执行上面的启动命令并等待 boot_completed，再开始动态分析；分析结束后不强制关机（保留快照加速下次启动）。
+## 反编译引擎自主选择路由（遇到二进制分析任务时自动决策，无需询问用户）
+
+按目标类型与场景自动选引擎，**不要问用户"用 IDA 还是 Ghidra"**：
+
+| 场景 | 用哪个 | 说明 |
+|---|---|---|
+| Windows PE / 单文件交互分析（默认） | **IDA Pro MCP**（66 工具，127.0.0.1:13337） | Hex-Rays 反编译质量最好，自动启动 |
+| Android SO / DEX native 库 | **IDA MCP** 或 seep r2 八件套 | 快速侦察用 `seep_r2_*`，深度反编译用 IDA |
+| 需要批量 headless 分析 / 大样本脚本流水线 | **Ghidra headless**（`~/tools/bin/ghidra-mcp-headless.sh`） | IDA idalib 也能做，但 Ghidra 免费且擅长批处理 |
+| IDA 授权失效 / 13337 不通 | **自动降级 Ghidra MCP**（mcp.json 已配 lazy） | 不要停下来问用户，降级后继续干活 |
+| 快速字符串/导入表/熵分析 | **seep r2 八件套**（`seep_r2_info/_strings/_functions`） | 最轻量，无需启动任何 GUI |
+
+**IDA MCP 启动**：`open "$HOME/Applications/IDA Professional 9.5/IDA Professional 9.5.app" --args <binary>`，等 13337 端口 LISTEN（`lsof -nP -iTCP:13337 -sTCP:LISTEN`）后即可用 66 个工具。
+**降级链**：IDA → Ghidra MCP → seep r2 八件套，自动逐级降级，全程不打断用户。
+
+<!-- seep-android-avd:end -->

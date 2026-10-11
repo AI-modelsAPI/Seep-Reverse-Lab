@@ -96,7 +96,8 @@ metadata:
 | `.elf` / Linux 服务 / `\x7fELF` | **Linux** |
 | `.js` / `.asar` / Web 前端 / 用户说"网站·网页·接口·前端" | **Web/JS** |
 | `libapp.so` + `global-metadata.dat` / 用户说"flutter·跨平台" | **Flutter** |
-| `.ipa` / Mach-O | **iOS**（未覆盖，明确告知） |
+| Mach-O with macOS/Darwin target | **macOS**: Seep Radare2 recon + Ghidra MCP decompilation |
+| `.ipa` or confirmed iOS target | **iOS**: runtime/device support must be verified separately |
 
 #### 类型自动判型 —— 从用户大白话推断
 
@@ -263,3 +264,14 @@ metadata:
 | 出加固方案 | `defense-in-depth.md` |
 | UI 文案/状态验收 | `ui-verification.md` |
 | 找现成脚本 | `tooling.md` |
+
+## Local Pi Desktop macOS routing (2026-10-04)
+For natural-language requests to analyze a file, restore an algorithm, or solve an authorized self-authored crackme, choose the tools yourself. Do not ask the user for MCP names or addresses.
+- Discover tools with ToolSearch before invocation; on-demand tools are available on the next turn.
+- Call seep_status, then seep_auto_triage/seep_r2_info to identify the actual target platform.
+- For macOS Mach-O use seep for recon and ghidra for C pseudocode. Native PE/ELF may also be analyzed statically; execution requires a compatible OS.
+- Use list_open_programs and switch_program; load_program only if the target is not already imported. Never decompile the wrong current program.
+- Search the KB as needed. Prove claims with actual tool results and negative/positive execution tests. Hash before and after execution.
+- Use Chinese for Chinese requests. The lab prefix is a workflow hint, not a permission or safety override.
+- IDA Pro 9.5 is installed at ~/Applications (Hex-Rays ready, MCP on 127.0.0.1:13337); Ghidra MCP is the fallback. Mono does not provide Windows WPF. JS-Reverse/Playwright are not enabled. Do not claim unverified tools are available.
+- Provider-side safety settings and the local compliance relay are managed outside this skill; do not re-enable or remove them here.
