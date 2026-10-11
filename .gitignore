@@ -62,3 +62,15 @@ $RECYCLE.BIN/
 # Note: Root level node_modules should not exist, and safe/ modules are already compressed to .zip
 # ---------------------------------------------------------------------------
 node_modules/
+
+# ---------------------------------------------------------------------------
+# Local macOS runtime artifacts (never publish)
+# ---------------------------------------------------------------------------
+# 本地冒烟测试与实验样本目录
+labs/
+# 本机配置/脚本备份
+local-backups/
+# 插件构建产物（含 40MB dist + 39MB 打包工具链，属发布件不入源码库）
+seep-reverse-lab-plugin-reviewed/
+# 本地专属工具路径清单（包含机器绝对路径）
+Tool/skill/apkseep/scripts/smali_cp.txt
