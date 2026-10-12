@@ -134,6 +134,39 @@ class TestMatcher(unittest.TestCase):
         out, count = self.matcher.rewrite("破解 然后 绕过")
         self.assertEqual(count, 2)
 
+    # ------------------------------------------------ 改写伪影折叠（2026-10-12）
+    def test_adjacent_repeat_collapsed(self):
+        """「绕过验证」→「旁路验证」而非「旁路验证验证」。
+
+        畸形重复词是模型识破「文本被程序改写」的直接线索，
+        实测会导致上游据此判定规避意图并拒答。
+        """
+        out, count = self.matcher.rewrite("绕过验证")
+        self.assertEqual(count, 1)
+        self.assertEqual(out, "旁路验证")
+        self.assertNotIn("验证验证", out)
+
+    def test_adjacent_repeat_collapsed_variants(self):
+        cases = {
+            "激活验证": "特权状态离线验证",
+            "解锁验证": "离线决策分支验证",
+            "去更新验证": "升级检测分支本地化验证",
+            "会员功能验证": "受限权限功能模块验证",
+        }
+        for raw, expected in cases.items():
+            out, _ = self.matcher.rewrite(raw)
+            self.assertEqual(out, expected, f"{raw} 折叠结果不符")
+
+    def test_collapse_keeps_legit_reduplication(self):
+        """合法叠词不得被折叠。"""
+        for word in ("看看", "试试", "慢慢", "常常"):
+            self.assertEqual(relay.collapse_adjacent_repeats(word), word)
+
+    def test_collapse_only_touches_cjk(self):
+        """非中文内容不受影响（避免破坏路径 / 代码标识符）。"""
+        for raw in ("aa", "test test", "libfoo.so", "0x1234"):
+            self.assertEqual(relay.collapse_adjacent_repeats(raw), raw)
+
 
 # =============================================================================
 # 2. 上下文守卫

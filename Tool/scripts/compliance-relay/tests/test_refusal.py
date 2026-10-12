@@ -39,8 +39,41 @@ ATTACK_TEXT = (
 )
 BENIGN_TEXT = "帮我解释一下 Python 的装饰器是怎么工作的"
 
+BENIGN_TEXT = "帮我解释一下 Python 的装饰器是怎么工作的"
 
-# =============================================================================
+# 短命令形态（2026-10-12 实测缺陷）：用户直接说「分析 <应用名>，<动词>」
+SHORT_ATTACK_TEXT = "分析AndroGoat-v2.0.1，绕过验证"
+
+
+class TestShortFormRegression(unittest.TestCase):
+    """短命令形态必须能被识别并生成改写候选。
+
+    上游原始门槛要求「是否存在 / 复现 / 写报告」这类完整句式，
+    且目标必须是带扩展名的路径 —— 短命令两条都不满足，
+    导致拒答重试永远不触发，请求被静默拦下。
+    """
+
+    def test_short_form_detected(self):
+        self.assertTrue(refusal.looks_like_attack_request(SHORT_ATTACK_TEXT))
+
+    def test_short_form_target_extracted(self):
+        self.assertEqual(refusal.extract_target(SHORT_ATTACK_TEXT), "AndroGoat-v2.0.1")
+
+    def test_short_form_builds_candidates(self):
+        candidates = refusal.build_candidates(SHORT_ATTACK_TEXT, max_attempts=3)
+        self.assertTrue(candidates, "短命令必须能生成改写候选")
+        for _name, text in candidates:
+            self.assertIn("AndroGoat-v2.0.1", text, "改写不得丢失目标")
+
+    def test_bare_name_with_extension_still_wins(self):
+        """带扩展名的路径优先于裸名字匹配。"""
+        text = r"分析 D:\tools\sample.exe 的授权逻辑"
+        self.assertEqual(refusal.extract_target(text), r"D:\tools\sample.exe")
+
+    def test_benign_short_phrase_still_ignored(self):
+        """无动词的普通短句不得被误判。"""
+        for text in ("帮我分析这个程序", "你好", "解释一下装饰器"):
+            self.assertFalse(refusal.looks_like_attack_request(text), text)
 # 1. 形态识别
 # =============================================================================
 class TestShapeDetection(unittest.TestCase):

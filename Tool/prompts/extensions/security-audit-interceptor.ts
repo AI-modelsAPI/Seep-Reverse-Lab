@@ -222,14 +222,58 @@ function buildSensitiveMatcher(): {
 const SENSITIVE_MATCHER = buildSensitiveMatcher();
 
 /** 单趟最长优先转译；命中注入上下文或斜杠命令时原样返回。 */
+// 中文里的合法叠词（如「看看」「试试」），合并重复时不能误伤
+const LEGIT_REDUPLICATION = new Set(
+	("看看 试试 聊聊 想想 说说 走走 坐坐 问问 找找 查查 等等 刚刚 常常 渐渐 " +
+		"慢慢 好好 多多 少少 天天 年年 月月 人人 家家 处处 时时 个个 种种 " +
+		"轻轻 悄悄 静静 默默 频频 屡屡 纷纷 稍稍 略略 微微 深深").split(" "),
+);
+
+function isCjk(unit: string): boolean {
+	return /^[\u4e00-\u9fff]+$/.test(unit);
+}
+
+/**
+ * 折叠改写产生的相邻重复片段。
+ *
+ * 替换规则会把「绕过」→「旁路验证」，若原文紧接着还有「验证」，
+ * 就会拼出「旁路验证验证」这种正常中文里不存在的词。模型据此判定
+ * 「这是被程序改写过的文本」，反而更容易识别为规避意图并拒绝。
+ */
+function collapseAdjacentRepeats(text: string, maxUnit = 6): string {
+	if (!text) return text;
+	for (let round = 0; round < 8; round += 1) {
+		let changed = false;
+		for (let unitLen = maxUnit; unitLen > 1; unitLen -= 1) {
+			let i = 0;
+			while (i + unitLen * 2 <= text.length) {
+				const unit = text.slice(i, i + unitLen);
+				if (unit === text.slice(i + unitLen, i + unitLen * 2)) {
+					if (!isCjk(unit) || LEGIT_REDUPLICATION.has(unit)) {
+						i += 1;
+						continue;
+					}
+					text = text.slice(0, i + unitLen) + text.slice(i + unitLen * 2);
+					changed = true;
+					continue;
+				}
+				i += 1;
+			}
+		}
+		if (!changed) break;
+	}
+	return text;
+}
+
 function applySensitiveRewrite(text: string): string {
 	if (!SENSITIVE_MATCHER || !text) return text;
 	if (text.replace(/^\s+/, "").startsWith("/")) return text;
 	if (isInjectedContext(text)) return text;
-	return text.replace(
+	const rewritten = text.replace(
 		SENSITIVE_MATCHER.regex,
 		(match) => SENSITIVE_MATCHER!.mapping.get(match) ?? match,
 	);
+	return rewritten === text ? text : collapseAdjacentRepeats(rewritten);
 }
 
 // Gemini 全局安全防护放行配置（彻底关闭所有分类的安全过滤器拦截）

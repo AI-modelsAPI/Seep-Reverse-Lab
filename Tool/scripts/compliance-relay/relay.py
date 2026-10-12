@@ -74,6 +74,50 @@ CHUNK_SIZE = 8192
 SSE_PEEK_CAP = 8192
 JSON_BUFFER_CAP = 4 * 1024 * 1024
 
+# 中文里的合法叠词（如「看看」「试试」），合并重复时不能误伤
+_LEGIT_REDUPLICATION = frozenset(
+    """
+    看看 试试 聊聊 想想 说说 走走 坐坐 问问 找找 查查 等等 刚刚 常常 渐渐
+    慢慢 好好 多多 少少 天天 年年 月月 人人 家家 处处 时时 个个 种种
+    轻轻 悄悄 静静 默默 频频 屡屡 渐渐 纷纷 纷纷 稍稍 略略 微微 深深
+    """.split()
+)
+
+
+def collapse_adjacent_repeats(text: str, max_unit: int = 6) -> str:
+    """合并相邻重复的中文片段（改写产物的畸形伪影）。
+
+    替换规则会把「绕过」→「旁路验证」，若原文紧接着还有「验证」，
+    就会拼出「旁路验证验证」这种正常中文里不存在的词。模型一眼就能看出
+    「这是被程序改写过的文本」，反而更容易判定为规避意图。
+
+    这里把相邻重复的 2~6 字片段折叠成一份（长单位优先），
+    并跳过「看看」「试试」这类合法叠词。
+    """
+    if not text:
+        return text
+    for _ in range(8):  # 有界收敛，避免病态输入死循环
+        changed = False
+        for unit_len in range(max_unit, 1, -1):
+            i = 0
+            while i + unit_len * 2 <= len(text):
+                unit = text[i : i + unit_len]
+                if unit == text[i + unit_len : i + unit_len * 2]:
+                    if not _is_cjk(unit) or unit in _LEGIT_REDUPLICATION:
+                        i += 1
+                        continue
+                    text = text[: i + unit_len] + text[i + unit_len * 2 :]
+                    changed = True
+                    continue
+                i += 1
+        if not changed:
+            break
+    return text
+
+
+def _is_cjk(unit: str) -> bool:
+    return all("\u4e00" <= ch <= "\u9fff" for ch in unit)
+
 
 # =============================================================================
 # 1. 规则匹配引擎
@@ -119,7 +163,11 @@ class Matcher:
             return self.mapping[match.group(0)]
 
         out = self._pattern.sub(_repl, text)
-        return (out, counter["n"]) if counter["n"] else (text, 0)
+        if counter["n"]:
+            # 折叠改写产生的相邻重复伪影（「旁路验证验证」→「旁路验证」）
+            out = collapse_adjacent_repeats(out)
+            return out, counter["n"]
+        return text, 0
 
 
 def is_slash_command(text: str) -> bool:
@@ -659,7 +707,7 @@ class RelayHandler(BaseHTTPRequestHandler):
         attempt = None
         for idx, (label, body_bytes) in enumerate(candidates):
             attempt = self._attempt(
-                conn_cls, method, host, port, target, headers, body_bytes
+                conn_cls, method, scheme, host, port, target, headers, body_bytes
             )
             if attempt is None:
                 print("[ERROR  ] upstream unreachable", flush=True)
@@ -755,6 +803,7 @@ class RelayHandler(BaseHTTPRequestHandler):
         self,
         conn_cls,
         method: str,
+        scheme: str,
         host: str,
         port: int | None,
         target: str,

@@ -47,9 +47,14 @@ ATTACK_VERB = re.compile(
 )
 
 # 「要求执行」的意图（这是真正的触发点，而非某个具体词汇）
+#
+# 除上游原有的长句式（「是否存在…复现…写报告」）外，补上简写形态：
+# 用户常直接说「分析 <目标>」「看一下 <目标>」这类短命令，上游正则要求
+# 「分析…程序」才命中，导致短句永远不触发改写重试（实测 2026-10-12）。
 ATTACK_ASK = re.compile(
     r"(是否存在|有没有|能否|是否可以|复现|书写.{0,6}报告|生成.{0,6}报告|"
-    r"出.{0,4}报告|帮我.{0,4}分析|分析.{0,4}程序)",
+    r"出.{0,4}报告|帮我.{0,4}分析|分析.{0,4}程序|"
+    r"分析|看一下|看下|检查一下|检查下|验证|走查|审计|研究|定位)",
     re.IGNORECASE,
 )
 
@@ -60,13 +65,25 @@ QUOTED_TARGET = re.compile(
 BARE_TARGET = re.compile(
     r"([A-Za-z]:\\[^\s，,。；;、\n]+?\.(?:exe|dll|apk|so|dylib|jar))", re.IGNORECASE
 )
-
+# 无扩展名的产品名 / 应用名（如 AndroGoat-v2.0.1、uTools-7.8.0）。
+# 上游只认带扩展名的路径，导致「分析 <应用名>」这类短命令提不出目标，
+# 改写策略全部返回空 → 拒答重试永远不触发（实测 2026-10-12）。
+# 无扩展名的产品名 / 应用名（如 AndroGoat-v2.0.1、uTools-7.8.0）。
+# 上游只认带扩展名的路径，导致「分析 <应用名>」这类短命令提不出目标，
+# 改写策略全部返回空 → 拒答重试永远不触发（实测 2026-10-12）。
+# 注意：不能用 \b —— Python 的 \w 含 CJK，「析AndroGoat」之间没有词边界。
+BARE_NAME = re.compile(
+    r"(?<![A-Za-z0-9])([A-Za-z][A-Za-z0-9]*(?:[._-][A-Za-z0-9]+)+)"
+)
 
 def extract_target(text: str) -> str:
     m = QUOTED_TARGET.search(text)
     if m:
         return m.group(1)
     m = BARE_TARGET.search(text)
+    if m:
+        return m.group(1)
+    m = BARE_NAME.search(text)
     if m:
         return m.group(1)
     return ""
