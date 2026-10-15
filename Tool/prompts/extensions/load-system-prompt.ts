@@ -87,11 +87,17 @@ export default function loadSystemPrompt(pi: ExtensionAPI) {
 		const { systemPrompt, systemPromptOptions } = event;
 
 		// Find custom system.md files
+		// 同时尝试 system.md / SYSTEM.md：Linux 文件系统大小写敏感，
+		// 工作台安装的是 SYSTEM.md（大写），旧实现只找小写 → 静默失效。
 		const candidates = [
 			join(process.cwd(), ".pi", "system.md"),
+			join(process.cwd(), ".pi", "SYSTEM.md"),
 			join(process.cwd(), "system.md"),
+			join(process.cwd(), "SYSTEM.md"),
 			join(homedir(), ".pi", "agent", "system.md"),
+			join(homedir(), ".pi", "agent", "SYSTEM.md"),
 			join(homedir(), ".pi", "system.md"),
+			join(homedir(), ".pi", "SYSTEM.md"),
 		];
 
 		const customSections: string[] = [];
