@@ -1,7 +1,7 @@
 # 逆向信号 → 文档映射总表（自动生成）
 
-> 生成: 2026-10-17 10:46  |  由 `kb_maintain.py --signals` 产生
-> 唯一信号: 2168  |  覆盖文档: 214
+> 生成: 2026-10-17 11:14  |  由 `kb_maintain.py --signals` 产生
+> 唯一信号: 2181  |  覆盖文档: 215
 
 ## 用法
 
@@ -178,6 +178,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `admin bot` | ctf-website/xss | ctf-website/techniques/07-client/admin-bot-xss.md |
 | `adminer` | ctf-website/database-attacks | ctf-website/techniques/24-database/00-overview.md<br>ctf-website/techniques/24-database/01-sqli-fundamentals.md<br>ctf-website/techniques/24-database/02-sqli-advanced.md |
 | `adminer /adminer.php` | ctf-website | ctf-website/techniques/24-database/05-backup-log-leak.md |
+| `aegis 保护壳` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `aes` | apk-reverse/crypto, general/crypto | apk-reverse/techniques/04-crypto/01-game-encryption-patterns.md<br>apk-reverse/techniques/04-crypto/02-rc4-custom-crypto.md<br>general/techniques/crypto/01-algorithm-identification.md |
 | `aes sbox / te0` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/05-high-entropy-compression-vs-crypto-routing.md |
 | `agate` | ctf-website/paywall-bypass | ctf-website/techniques/23-paywall-bypass/01-paywall-detection-bypass.md<br>ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md<br>ctf-website/techniques/23-paywall-bypass/03-network-rule-blocking.md |
@@ -340,6 +341,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `certificate transparency` | ctf-website/cloudflare-bypass | ctf-website/techniques/01-recon/cloudflare-bypass.md |
 | `cf-cache-status` | ctf-website/cloudflare-bypass | ctf-website/techniques/01-recon/cloudflare-bypass.md |
 | `cf-ray` | ctf-website/cloudflare-bypass | ctf-website/techniques/01-recon/cloudflare-bypass.md |
+| `chacha20` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `chacha20 expand 32-byte k` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/05-high-entropy-compression-vs-crypto-routing.md |
 | `chage` | ctf-website/fd-theft-pidfd | general/techniques/01-kernel/03-mm-null-ptrace-bypass.md |
 | `channel verify` | apk-reverse/network | apk-reverse/techniques/05-network/01-game-protocol-hook.md<br>apk-reverse/techniques/05-network/02-license-verification-bypass.md |
@@ -659,6 +661,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `fingerprint` | ctf-website/recon | ctf-website/techniques/01-recon/recon-routing.md<br>ctf-website/techniques/01-recon/version-fingerprinting.md |
 | `firebase config` | ctf-website/api-attacks | ctf-website/techniques/17-api-attacks/01-api-discovery-leak.md<br>ctf-website/techniques/17-api-attacks/02-api-key-leak.md |
 | `first 30 min` | general/methodology | general/methodology/01-headless-emulation-windows-android-handbook.md<br>general/methodology/02-remote-mcp-device-bridge-deployment.md<br>general/techniques/methodology/01-reverse-checklist-first-30-min.md |
+| `flag{` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `flatbuffers` | general/protocol | general/techniques/protocol/01-unknown-protocol-reverse.md<br>general/techniques/protocol/02-protobuf-flatbuffers-reverse.md |
 | `flatbuffers offset` | general | general/techniques/protocol/02-protobuf-flatbuffers-reverse.md |
 | `fleet` | ctf-website/24h-loop-orchestration | ctf-website/techniques/00-workflow/24h-loop-orchestration.md<br>ctf-website/techniques/attack-network.md |
@@ -965,6 +968,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `lost update` | ctf-website/race-lost-update | ctf-website/techniques/12-payment/payment-race-lost-update.md |
 | `loyalty points` | ctf-website/payment-digital-goods | ctf-website/techniques/12-payment/payment-digital-goods.md |
 | `lz4 magic 04 22 4d 18` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/05-high-entropy-compression-vs-crypto-routing.md |
+| `lzss` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `mac shellcode` | pe-reverse/av-evasion | pe-reverse/techniques/09-av-evasion/01-ai-powered-evasion.md |
 | `machine code` | pe-reverse/static-analysis | pe-reverse/techniques/03-static-analysis/01-struct-reconstruction.md<br>pe-reverse/techniques/03-static-analysis/02-disasm-jit-asm.md<br>pe-reverse/techniques/03-static-analysis/03-x64dbg-breakpoints.md |
 | `machineguid` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
@@ -1053,6 +1057,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `navigator.webdriver` | ctf-website | ctf-website/techniques/27-js-reverse/02-browser-env-emulation-proxy-sandbox.md |
 | `ndk` | apk-reverse/native | apk-reverse/techniques/02-native/01-il2cpp-offset-discovery.md<br>apk-reverse/techniques/02-native/02-pointer-chain-patterns.md<br>apk-reverse/techniques/02-native/03-ue4-offset-hunting.md |
 | `ndr` | ctf-website/payment-bounce-idor | ctf-website/techniques/12-payment/payment-email-bounce-idor.md |
+| `nested helix` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `nested vm` | pe-reverse, pe-reverse/crypto-unpack | pe-reverse/techniques/05-crypto-unpack/01-pe-unpack-dump.md<br>pe-reverse/techniques/05-crypto-unpack/02-vmp-virtualization-analysis.md<br>pe-reverse/techniques/05-crypto-unpack/03-vmp-devirtualization-toolchain.md |
 | `nesting params` | ctf-website/mass-assignment | ctf-website/techniques/15-mass-assignment/01-mass-assignment.md<br>ctf-website/techniques/15-mass-assignment/02-parameter-tampering.md |
 | `netstat syn flooding` | ctf-website | ctf-website/techniques/22-dos/06-tcp-state-exhaustion.md |
@@ -1340,6 +1345,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `referer: https://www.google.com/` | ctf-website | ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md |
 | `reflective` | pe-reverse/dynamic-analysis | pe-reverse/techniques/04-dynamic-analysis/01-dll-injection.md<br>pe-reverse/techniques/04-dynamic-analysis/02-trampoline-detour.md<br>pe-reverse/techniques/04-dynamic-analysis/03-external-memory-rw.md |
 | `reflective dll` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/06-modern-pe-unmapping-and-dump-reconstruction.md |
+| `reflective pe loader` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `refresh token abuse` | ctf-website/oauth-deep | ctf-website/techniques/20-oauth-deep/01-oauth-attack-chains.md<br>ctf-website/techniques/20-oauth-deep/02-session-fixation-attacks.md |
 | `refund` | ctf-website/payment | ctf-website/techniques/12-payment/payment-bypass.md<br>ctf-website/techniques/12-payment/payment-callback-async.md<br>ctf-website/techniques/12-payment/payment-digital-goods.md |
 | `regex` | ctf-website/redos-timing | ctf-website/techniques/03-injection/redos-timing.md |
@@ -1436,6 +1442,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `sender forgery` | ctf-website/dns-email | ctf-website/techniques/19-dns-email/01-subdomain-takeover.md<br>ctf-website/techniques/19-dns-email/02-email-spoofing.md |
 | `sendto` | apk-reverse/network | apk-reverse/techniques/05-network/01-game-protocol-hook.md<br>apk-reverse/techniques/05-network/02-license-verification-bypass.md |
 | `serial` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
+| `serial 逆向` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `serialized value` | ctf-website/redis-valkey-restore-zipmap | ctf-website/techniques/09-cve/02-redis-zipmap-rce.md |
 | `server-side request forgery` | ctf-website/ssrf | ctf-website/techniques/04-ssrf/ssrf.md |
 | `server-side validation` | general | general/techniques/cheating/05-speedhack-time-manipulation.md |
@@ -1663,6 +1670,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `unholydragon-n.exe 文件名序号` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/04-twinbasic-compressed-resource-recovery.md |
 | `unicorn` | pe-reverse, pe-reverse/crypto-unpack | pe-reverse/techniques/05-crypto-unpack/01-pe-unpack-dump.md<br>pe-reverse/techniques/05-crypto-unpack/02-vmp-virtualization-analysis.md<br>pe-reverse/techniques/05-crypto-unpack/03-vmp-devirtualization-toolchain.md |
 | `unicorn 仿真` | general | general/methodology/01-headless-emulation-windows-android-handbook.md |
+| `unicorn 切片仿真` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `unicorn 模拟执行` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/11-two-ring-vow-decoy-corridor-and-dual-verifier-reverse.md |
 | `unidbg` | apk-reverse, apk-reverse/packer | apk-reverse/techniques/02-native/07-unidbg-native-emulation-pipeline.md<br>apk-reverse/techniques/07-packer/01-obfuscation-detection.md<br>apk-reverse/techniques/07-packer/02-self-extracting-payload.md |
 | `union select 回显位` | ctf-website | ctf-website/techniques/24-database/01-sqli-fundamentals.md |
@@ -1692,6 +1700,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `variable override` | ctf-website/signature-implementation | ctf-website/techniques/13-signature/02-implementation.md |
 | `varint` | general | general/techniques/protocol/02-protobuf-flatbuffers-reverse.md |
 | `vary: user-agent 响应头` | ctf-website | ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md |
+| `vault` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `vb.timer / vb.textbox` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/04-twinbasic-compressed-resource-recovery.md |
 | `vb6` | pe-reverse/crypto-unpack | pe-reverse/techniques/05-crypto-unpack/01-pe-unpack-dump.md<br>pe-reverse/techniques/05-crypto-unpack/02-vmp-virtualization-analysis.md<br>pe-reverse/techniques/05-crypto-unpack/03-vmp-devirtualization-toolchain.md |
 | `veh` | pe-reverse | pe-reverse/techniques/09-av-evasion/01-ai-powered-evasion.md |
@@ -1813,6 +1822,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `z3` | general | general/crypto/02-angr-symbolic-execution-solver.md |
 | `z3 constraint solving` | general | general/techniques/crypto/02-custom-obfuscation-reverse.md |
 | `zephr` | ctf-website/paywall-bypass | ctf-website/techniques/23-paywall-bypass/01-paywall-detection-bypass.md<br>ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md<br>ctf-website/techniques/23-paywall-bypass/03-network-rule-blocking.md |
+| `zero iat` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `zero price` | ctf-website/payment-bypass | ctf-website/techniques/12-payment/payment-bypass.md |
 | `zerocopy` | ctf-website/pintheft-io-uring | general/techniques/01-kernel/05-pintheft-io-uring-page-cache.md |
 | `zip bomb` | ctf-website/dos | ctf-website/techniques/22-dos/01-application-layer-dos.md<br>ctf-website/techniques/22-dos/02-resource-exhaustion.md<br>ctf-website/techniques/22-dos/03-amplification-drdos.md |
@@ -1891,6 +1901,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `双态特征码` | pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `双机制` | pe-reverse | pe-reverse/techniques/10-license-keygen/07-self-referencing-signature-convergence.md |
 | `双环互锁` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/11-two-ring-vow-decoy-corridor-and-dual-verifier-reverse.md |
+| `双螺旋虚拟机` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `双进程` | apk-reverse | apk-reverse/techniques/07-packer/05-vmp-anti-debug-bypass.md |
 | `反射攻击` | ctf-website/dos | ctf-website/techniques/22-dos/01-application-layer-dos.md<br>ctf-website/techniques/22-dos/02-resource-exhaustion.md<br>ctf-website/techniques/22-dos/03-amplification-drdos.md |
 | `反汇编` | pe-reverse, pe-reverse/static-analysis | pe-reverse/techniques/03-static-analysis/01-struct-reconstruction.md<br>pe-reverse/techniques/03-static-analysis/02-disasm-jit-asm.md<br>pe-reverse/techniques/03-static-analysis/03-x64dbg-breakpoints.md |
@@ -2141,6 +2152,8 @@ seep_kb_read("<文档路径>")             # 读全文
 | `连接字符串泄露 .env` | ctf-website | ctf-website/techniques/24-database/00-overview.md |
 | `连接池满 max_connections` | ctf-website | ctf-website/techniques/22-dos/02-resource-exhaustion.md |
 | `迭代收敛` | pe-reverse | pe-reverse/techniques/10-license-keygen/07-self-referencing-signature-convergence.md |
+| `迷宫寻路` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
+| `迷宫约束` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
 | `退信` | ctf-website/payment-bounce-idor | ctf-website/techniques/12-payment/payment-email-bounce-idor.md |
 | `退款` | ctf-website/payment | ctf-website/techniques/12-payment/payment-bypass.md<br>ctf-website/techniques/12-payment/payment-callback-async.md<br>ctf-website/techniques/12-payment/payment-digital-goods.md |
 | `透视` | general/cheating | general/techniques/cheating/01-memory-hacking.md<br>general/techniques/cheating/02-packet-interception.md<br>general/techniques/cheating/03-esp-wallhack-rendering.md |
