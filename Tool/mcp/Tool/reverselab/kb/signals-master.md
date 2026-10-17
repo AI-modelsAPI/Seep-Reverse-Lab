@@ -1,7 +1,7 @@
 # 逆向信号 → 文档映射总表（自动生成）
 
-> 生成: 2026-10-17 14:40  |  由 `kb_maintain.py --signals` 产生
-> 唯一信号: 2203  |  覆盖文档: 217
+> 生成: 2026-10-18 06:06  |  由 `kb_maintain.py --signals` 产生
+> 唯一信号: 2219  |  覆盖文档: 219
 
 ## 用法
 
@@ -36,15 +36,19 @@ seep_kb_read("<文档路径>")             # 读全文
 | `24h` | ctf-website/24h-loop-orchestration | ctf-website/techniques/00-workflow/24h-loop-orchestration.md<br>ctf-website/techniques/attack-network.md |
 | `24h loop` | ctf-website | ctf-website/techniques/00-workflow/24h-loop-orchestration.md |
 | `24小时` | ctf-website/24h-loop-orchestration | ctf-website/techniques/00-workflow/24h-loop-orchestration.md<br>ctf-website/techniques/attack-network.md |
+| `256 项重定位分发表` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `2captcha` | ctf-website/captcha-bypass | ctf-website/techniques/01-recon/captcha-bypass.md |
 | `301` | ctf-website/open-redirect | ctf-website/techniques/04-ssrf/open-redirect.md |
 | `302` | ctf-website/open-redirect | ctf-website/techniques/04-ssrf/open-redirect.md |
 | `360免杀` | pe-reverse/av-evasion | pe-reverse/techniques/09-av-evasion/01-ai-powered-evasion.md |
+| `38 指令虚拟机` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `389` | ctf-website/ldap | ctf-website/techniques/02-auth/ldap-injection.md |
 | `5-bit` | pe-reverse | pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `511 字节` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/09-runtime-vm-detection-generic.md |
 | `636` | ctf-website/ldap | ctf-website/techniques/02-auth/ldap-injection.md |
 | `71 步虚拟机` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
+| `8 类不透明谓词` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md |
+| `99.2% 压缩比` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `== vs ===` | ctf-website/signature-implementation | ctf-website/techniques/13-signature/02-implementation.md |
 | `["alg:none", "none算法", "无签名", "签名绕过", "jwt", "jwt_tool"]` | ctf-website | ctf-website/techniques/02-auth/jwt/01-alg-none.md |
 | `["algorithm downgrade", "算法降级", "alg none", "sign_type", "rs256 hs256", "jwt confusion", "md5签名", "签名编码"]` | ctf-website | ctf-website/techniques/13-signature/01-algorithm.md |
@@ -302,6 +306,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `breakpoint` | pe-reverse/static-analysis | pe-reverse/techniques/03-static-analysis/01-struct-reconstruction.md<br>pe-reverse/techniques/03-static-analysis/02-disasm-jit-asm.md<br>pe-reverse/techniques/03-static-analysis/03-x64dbg-breakpoints.md |
 | `broadcast` | apk-reverse/manifest | apk-reverse/techniques/03-manifest/01-entry-point-tracing.md |
 | `brute force` | ctf-website/rate-limit | ctf-website/techniques/16-rate-limit/01-rate-limit-bypass.md<br>ctf-website/techniques/16-rate-limit/02-brute-force-tactics.md |
+| `bsd 型不透明谓词` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `bson 注入` | ctf-website | ctf-website/techniques/24-database/03-nosql-injection.md |
 | `buffer overflow` | ctf-website/nginx-rewrite-heapoverflow | ctf-website/techniques/09-cve/06-nginx-rewrite-heapoverflow.md |
 | `bypass` | general/cheating | general/techniques/cheating/01-memory-hacking.md<br>general/techniques/cheating/02-packet-interception.md<br>general/techniques/cheating/03-esp-wallhack-rendering.md |
@@ -424,6 +429,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `crc` | general/protocol | general/techniques/protocol/01-unknown-protocol-reverse.md<br>general/techniques/protocol/02-protobuf-flatbuffers-reverse.md |
 | `crc reverse` | general | general/techniques/protocol/01-unknown-protocol-reverse.md |
 | `crc 校验` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
+| `crc32 自校验` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `createremotethread` | pe-reverse, pe-reverse/dynamic-analysis | pe-reverse/techniques/04-dynamic-analysis/01-dll-injection.md<br>pe-reverse/techniques/04-dynamic-analysis/02-trampoline-detour.md<br>pe-reverse/techniques/04-dynamic-analysis/03-external-memory-rw.md |
 | `createservice` | pe-reverse | pe-reverse/techniques/06-ioc-extraction/02-persistence-startup-chain.md |
 | `credential spraying` | ctf-website/rate-limit | ctf-website/techniques/16-rate-limit/01-rate-limit-bypass.md<br>ctf-website/techniques/16-rate-limit/02-brute-force-tactics.md |
@@ -908,7 +914,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `json 深度嵌套解析器崩溃` | ctf-website | ctf-website/techniques/22-dos/02-resource-exhaustion.md |
 | `json-ld articlebody` | ctf-website, ctf-website/paywall-bypass | ctf-website/techniques/23-paywall-bypass/01-paywall-detection-bypass.md<br>ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md<br>ctf-website/techniques/23-paywall-bypass/03-network-rule-blocking.md |
 | `jsonp` | ctf-website/csp-cors-advanced | ctf-website/techniques/18-cors-csp-advanced/01-csp-bypass.md<br>ctf-website/techniques/18-cors-csp-advanced/02-xs-leaks-browser-sidechannels.md |
-| `junk code` | pe-reverse/av-evasion | pe-reverse/techniques/09-av-evasion/01-ai-powered-evasion.md |
+| `junk code` | pe-reverse, pe-reverse/av-evasion | pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md<br>pe-reverse/techniques/09-av-evasion/01-ai-powered-evasion.md |
 | `jwe` | ctf-website/jwt, ctf-website/web-crypto | ctf-website/techniques/02-auth/jwt/00-overview.md<br>ctf-website/techniques/02-auth/jwt/01-alg-none.md<br>ctf-website/techniques/02-auth/jwt/02-algorithm-confusion.md |
 | `jws` | ctf-website/jwt | ctf-website/techniques/02-auth/jwt/00-overview.md<br>ctf-website/techniques/02-auth/jwt/01-alg-none.md<br>ctf-website/techniques/02-auth/jwt/02-algorithm-confusion.md |
 | `jwt` | ctf-website/jwt | ctf-website/techniques/02-auth/jwt/00-overview.md<br>ctf-website/techniques/02-auth/jwt/01-alg-none.md<br>ctf-website/techniques/02-auth/jwt/02-algorithm-confusion.md |
@@ -1107,10 +1113,10 @@ seep_kb_read("<文档路径>")             # 读全文
 | `nt header` | pe-reverse/pe-structure | pe-reverse/techniques/02-pe-structure/01-pe-header-parsing.md |
 | `ntdll` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/07-direct-syscall.md |
 | `ntdll hook` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/07-direct-syscall.md |
-| `ntglobalflag` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/05-anti-debug-bypass.md |
+| `ntglobalflag` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/05-anti-debug-bypass.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `ntp monlist` | ctf-website/dos | ctf-website/techniques/22-dos/01-application-layer-dos.md<br>ctf-website/techniques/22-dos/02-resource-exhaustion.md<br>ctf-website/techniques/22-dos/03-amplification-drdos.md |
 | `ntp monlist 放大 556x` | ctf-website | ctf-website/techniques/22-dos/03-amplification-drdos.md |
-| `ntqueryinformationprocess` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/05-anti-debug-bypass.md |
+| `ntqueryinformationprocess` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/05-anti-debug-bypass.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `nvd` | ctf-website/cve | ctf-website/techniques/09-cve/cve-correlation-graph.md<br>ctf-website/techniques/09-cve/cve-workflow.md<br>ctf-website/techniques/09-cve/multi-cve-chain-playbook.md |
 | `nxdomain 响应占比 >90%` | ctf-website | ctf-website/techniques/22-dos/07-dns-dos.md |
 | `nytimes paywall` | ctf-website/paywall-bypass | ctf-website/techniques/23-paywall-bypass/01-paywall-detection-bypass.md<br>ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md<br>ctf-website/techniques/23-paywall-bypass/03-network-rule-blocking.md |
@@ -1521,6 +1527,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `slub corruption` | general | general/techniques/01-kernel/02-slab-cross-cache.md |
 | `smali` | apk-reverse/dex-java | apk-reverse/techniques/01-dex-java/01-smali-injection.md |
 | `smarty` | ctf-website/ssti | ctf-website/techniques/03-injection/ssti.md |
+| `smc 自修改节` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `sms verify` | ctf-website/captcha-bypass | ctf-website/techniques/01-recon/captcha-bypass.md |
 | `smt solver` | general | general/crypto/02-angr-symbolic-execution-solver.md |
 | `smtp injection` | ctf-website/dns-email, ctf-website/hpp-crlf | ctf-website/techniques/03-injection/hpp-crlf.md<br>ctf-website/techniques/19-dns-email/01-subdomain-takeover.md<br>ctf-website/techniques/19-dns-email/02-email-spoofing.md |
@@ -1779,6 +1786,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `websocket 连接数飙升` | ctf-website | ctf-website/techniques/22-dos/01-application-layer-dos.md |
 | `webview` | ctf-website/mobile-bridge | ctf-website/techniques/21-mobile-bridge/01-webview-attacks.md<br>ctf-website/techniques/21-mobile-bridge/02-cordova-reactnative.md |
 | `wechat pay` | ctf-website/payment | ctf-website/techniques/12-payment/payment-bypass.md<br>ctf-website/techniques/12-payment/payment-callback-async.md<br>ctf-website/techniques/12-payment/payment-digital-goods.md |
+| `whale vm` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `whatweb` | ctf-website/recon | ctf-website/techniques/01-recon/recon-routing.md<br>ctf-website/techniques/01-recon/version-fingerprinting.md |
 | `while switch 状态机` | ctf-website | ctf-website/techniques/27-js-reverse/01-ast-deobfuscation-pipeline.md |
 | `white-box` | general/crypto | general/techniques/crypto/01-algorithm-identification.md<br>general/techniques/crypto/02-custom-obfuscation-reverse.md |
@@ -1855,6 +1863,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `云元数据 169.254.169.254` | ctf-website | ctf-website/techniques/22-dos/12-ssrf-dos.md |
 | `云校验` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `云端授权` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
+| `五路反调试` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `交互式样本` | pe-reverse, pe-reverse/crypto-unpack | pe-reverse/techniques/05-crypto-unpack/01-pe-unpack-dump.md<br>pe-reverse/techniques/05-crypto-unpack/02-vmp-virtualization-analysis.md<br>pe-reverse/techniques/05-crypto-unpack/03-vmp-devirtualization-toolchain.md |
 | `付费墙` | ctf-website/paywall-bypass | ctf-website/techniques/23-paywall-bypass/01-paywall-detection-bypass.md<br>ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md<br>ctf-website/techniques/23-paywall-bypass/03-network-rule-blocking.md |
 | `付费订阅` | ctf-website/paywall-bypass | ctf-website/techniques/23-paywall-bypass/01-paywall-detection-bypass.md<br>ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md<br>ctf-website/techniques/23-paywall-bypass/03-network-rule-blocking.md |
@@ -1866,6 +1875,8 @@ seep_kb_read("<文档路径>")             # 读全文
 | `优惠券` | ctf-website/payment | ctf-website/techniques/12-payment/payment-bypass.md<br>ctf-website/techniques/12-payment/payment-callback-async.md<br>ctf-website/techniques/12-payment/payment-digital-goods.md |
 | `优惠券叠加` | ctf-website/mass-assignment | ctf-website/techniques/15-mass-assignment/01-mass-assignment.md<br>ctf-website/techniques/15-mass-assignment/02-parameter-tampering.md |
 | `位域` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
+| `位置相关双因子流密码` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md |
+| `位置相关流密码` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `余额` | ctf-website/payment | ctf-website/techniques/12-payment/payment-bypass.md<br>ctf-website/techniques/12-payment/payment-callback-async.md<br>ctf-website/techniques/12-payment/payment-digital-goods.md |
 | `余额绕过` | ctf-website/race-lost-update | ctf-website/techniques/12-payment/payment-race-lost-update.md |
 | `作弊` | general/cheating | general/techniques/cheating/01-memory-hacking.md<br>general/techniques/cheating/02-packet-interception.md<br>general/techniques/cheating/03-esp-wallhack-rendering.md |
@@ -1936,6 +1947,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `哪吒` | ctf-website/nezha-path-traversal | ctf-website/techniques/09-cve/04-nezha-path-traversal-jwt.md |
 | `回滚点错版` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `在线激活` | pe-reverse | pe-reverse/techniques/10-license-keygen/06-cloud-license-frida-hook.md |
+| `地址自基准立即数加密` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `填充漂移` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `壳` | apk-reverse/packer | apk-reverse/techniques/07-packer/01-obfuscation-detection.md<br>apk-reverse/techniques/07-packer/02-self-extracting-payload.md<br>apk-reverse/techniques/07-packer/03-vmp-dex2c-detection.md |
 | `壳行为` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/01-pe-unpack-dump.md |
@@ -1957,6 +1969,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `字符串锚定` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `字符集映射` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `字节替换` | pe-reverse | pe-reverse/techniques/08-patch/01-code-patching.md |
+| `定制 lz 压缩壳` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `定期付款` | ctf-website/payment-subscription | ctf-website/techniques/12-payment/payment-subscription.md |
 | `实时分析` | pe-reverse | pe-reverse/techniques/03-static-analysis/04-reclass-reconstruction.md |
 | `客户端鉴权旁路验证` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
@@ -1979,6 +1992,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `嵌套量词 (a+)+` | ctf-website | ctf-website/techniques/22-dos/04-redos.md |
 | `工作流` | general/methodology | general/methodology/01-headless-emulation-windows-android-handbook.md<br>general/methodology/02-remote-mcp-device-bridge-deployment.md<br>general/techniques/methodology/01-reverse-checklist-first-30-min.md |
 | `带壳样本仿真` | general, general/methodology | general/methodology/01-headless-emulation-windows-android-handbook.md<br>general/methodology/02-remote-mcp-device-bridge-deployment.md<br>general/techniques/methodology/01-reverse-checklist-first-30-min.md |
+| `帧内 idx 归零` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md |
 | `常量池位移` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `幂等` | ctf-website/payment-callback | ctf-website/techniques/12-payment/payment-callback-async.md |
 | `并发扣费` | ctf-website/race-lost-update | ctf-website/techniques/12-payment/payment-race-lost-update.md |
@@ -2028,6 +2042,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `无真实设备逆向` | general | general/methodology/01-headless-emulation-windows-android-handbook.md |
 | `无真机` | pe-reverse, pe-reverse/crypto-unpack | pe-reverse/techniques/05-crypto-unpack/01-pe-unpack-dump.md<br>pe-reverse/techniques/05-crypto-unpack/02-vmp-virtualization-analysis.md<br>pe-reverse/techniques/05-crypto-unpack/03-vmp-devirtualization-toolchain.md |
 | `无真机逆向` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/10-nested-vm-matryoshka-reverse-and-defeat.md |
+| `无输入校验样本识别` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md |
 | `日志断点` | pe-reverse | pe-reverse/techniques/03-static-analysis/03-x64dbg-breakpoints.md |
 | `时间检测` | apk-reverse | apk-reverse/techniques/07-packer/05-vmp-anti-debug-bypass.md |
 | `时间线` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/08-procmon-patterns.md |
@@ -2130,7 +2145,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `自解压` | apk-reverse/packer | apk-reverse/techniques/07-packer/01-obfuscation-detection.md<br>apk-reverse/techniques/07-packer/02-self-extracting-payload.md<br>apk-reverse/techniques/07-packer/03-vmp-dex2c-detection.md |
 | `节区` | pe-reverse/pe-structure | pe-reverse/techniques/02-pe-structure/01-pe-header-parsing.md |
 | `节区遍历` | pe-reverse | pe-reverse/techniques/02-pe-structure/01-pe-header-parsing.md |
-| `花指令` | pe-reverse | pe-reverse/techniques/09-av-evasion/01-ai-powered-evasion.md |
+| `花指令` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md<br>pe-reverse/techniques/09-av-evasion/01-ai-powered-evasion.md |
 | `花指令跳转` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/13-inside-the-machine-custom-vm-and-rolling-hash-defeat.md |
 | `虚拟化` | apk-reverse, apk-reverse/packer, pe-reverse | apk-reverse/techniques/07-packer/01-obfuscation-detection.md<br>apk-reverse/techniques/07-packer/02-self-extracting-payload.md<br>apk-reverse/techniques/07-packer/03-vmp-dex2c-detection.md |
 | `虚拟商品` | ctf-website/payment-digital-goods | ctf-website/techniques/12-payment/payment-digital-goods.md |
@@ -2162,6 +2177,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `跨进程` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/03-external-memory-rw.md |
 | `跳板` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/02-trampoline-detour.md |
 | `过滤规则` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/08-procmon-patterns.md |
+| `运行时 vip 轨迹交叉验证` | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md, pe-reverse | field_journal_2026-10-19_lucky-whale-dual-vm-devirtualization.md<br>pe-reverse/techniques/05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md |
 | `运行时 vm 探测` | pe-reverse, pe-reverse/crypto-unpack | pe-reverse/techniques/05-crypto-unpack/01-pe-unpack-dump.md<br>pe-reverse/techniques/05-crypto-unpack/02-vmp-virtualization-analysis.md<br>pe-reverse/techniques/05-crypto-unpack/03-vmp-devirtualization-toolchain.md |
 | `运行时定位` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `近邻偏移` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |

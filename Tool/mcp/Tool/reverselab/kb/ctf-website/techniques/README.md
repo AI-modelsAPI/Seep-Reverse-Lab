@@ -1,6 +1,6 @@
 # ctf-website 技术库目录
 
-> 本目录由 `kb_maintain.py --sync-index` 自动生成（2026-10-17）
+> 本目录由 `kb_maintain.py --sync-index` 自动生成（2026-10-18）
 > 共 27 类 / 116 篇
 
 ## 完整目录

@@ -1,7 +1,7 @@
 # pe-reverse 技术库目录
 
-> 本目录由 `kb_maintain.py --sync-index` 自动生成（2026-10-17）
-> 共 10 类 / 48 篇
+> 本目录由 `kb_maintain.py --sync-index` 自动生成（2026-10-18）
+> 共 10 类 / 49 篇
 
 ## 完整目录
 
@@ -35,7 +35,7 @@
 - [`04-dynamic-analysis/07-direct-syscall.md`](04-dynamic-analysis/07-direct-syscall.md) — Direct Syscall：绕过用户态 Hook
 - [`04-dynamic-analysis/08-procmon-patterns.md`](04-dynamic-analysis/08-procmon-patterns.md) — Procmon 行为监控与过滤
 
-### 05-crypto-unpack — 加密/内存转储与还原解包（15）
+### 05-crypto-unpack — 加密/内存转储与还原解包（16）
 
 - [`05-crypto-unpack/01-pe-unpack-dump.md`](05-crypto-unpack/01-pe-unpack-dump.md) — PE 脱壳与内存 Dump
 - [`05-crypto-unpack/02-vmp-virtualization-analysis.md`](05-crypto-unpack/02-vmp-virtualization-analysis.md) — VMP 虚拟化原理与 VM Entry 定位
@@ -51,6 +51,7 @@
 - [`05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md`](05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md) — Aegis 加壳与双螺旋嵌套虚拟机（VAULT）：Reflective Dump、迷宫唯一解约束与双层 VM 破译
 - [`05-crypto-unpack/13-inside-the-machine-custom-vm-and-rolling-hash-defeat.md`](05-crypto-unpack/13-inside-the-machine-custom-vm-and-rolling-hash-defeat.md) — 极简自定义虚拟机（Inside-the-Machine）：反调试对抗、Opcode 滚动置换与双重约束求根
 - [`05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md`](05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md) — Rust 保护与 HWID 虚拟机绑定（AegisShield）：反虚拟化走查、71 步字节码 VM 与 AES-256-CTR 提取
+- [`05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md`](05-crypto-unpack/15-custom-lz-vm-and-whale-junk-code-vm-devirtualization.md) — 定制 LZ 壳与 38 指令 VM / 99.2% 花指令湮灭的 Whale 虚拟机：双样本端到端反虚拟化
 - [`05-crypto-unpack/vmp-architecture-generations.md`](05-crypto-unpack/vmp-architecture-generations.md) — 联网检索结果：VMP 验证技术与我的分析对照
 
 ### 06-ioc-extraction — IOC 提取（2）
