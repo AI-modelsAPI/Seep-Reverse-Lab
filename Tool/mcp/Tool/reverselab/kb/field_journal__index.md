@@ -119,6 +119,7 @@ validated_by: "索引/目录类文档"
 
 - [VMProtect 官方 Demo：节区名混淆（.vmp0/.vmp1 vs 随机名）、原始节区 raw=0（PACK 特征）、绝对地址表 vs 32 位相对偏移表分发差异、handler 轮换（vm_pop 66 变体）、`[rsp+rax]` 虚拟寄存器重映射](./field_journal_2026-10-16_vmprotect-headless-selfhealing-handler-extraction.md)
 - [Matryoshka-VM 5 层嵌套虚拟机逆向攻坚：五层套娃拓扑剥离、LCG/Xorshift/SSE 确定性解密链、单字节断言弱密码缺陷求导与 24 字节 Flag 提取](./field_journal_2026-10-16_matryoshka-nested-vm-defeat-and-flag-recovery.md)
+- [two_ring_vow (两枚魔戒) 攻坚手记：防诱导欺骗走廊识破、双环互锁拆解、四重核验机同态双调用与确定性黄金标准发生器提取](./field_journal_2026-10-16_two-ring-vow-anti-analysis-decoy-and-gold-generator-recovery.md)
 
 ## 使用说明
 

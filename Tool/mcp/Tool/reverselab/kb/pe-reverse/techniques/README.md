@@ -1,7 +1,7 @@
 # pe-reverse 技术库目录
 
 > 本目录由 `kb_maintain.py --sync-index` 自动生成（2026-10-17）
-> 共 10 类 / 44 篇
+> 共 10 类 / 45 篇
 
 ## 完整目录
 
@@ -35,7 +35,7 @@
 - [`04-dynamic-analysis/07-direct-syscall.md`](04-dynamic-analysis/07-direct-syscall.md) — Direct Syscall：绕过用户态 Hook
 - [`04-dynamic-analysis/08-procmon-patterns.md`](04-dynamic-analysis/08-procmon-patterns.md) — Procmon 行为监控与过滤
 
-### 05-crypto-unpack — 加密/内存转储与还原解包（11）
+### 05-crypto-unpack — 加密/内存转储与还原解包（12）
 
 - [`05-crypto-unpack/01-pe-unpack-dump.md`](05-crypto-unpack/01-pe-unpack-dump.md) — PE 脱壳与内存 Dump
 - [`05-crypto-unpack/02-vmp-virtualization-analysis.md`](05-crypto-unpack/02-vmp-virtualization-analysis.md) — VMP 虚拟化原理与 VM Entry 定位
@@ -47,6 +47,7 @@
 - [`05-crypto-unpack/08-selfhealing-emulation-vmp-handler-extraction.md`](05-crypto-unpack/08-selfhealing-emulation-vmp-handler-extraction.md) — 自愈式仿真：无真机提取 VMP Handler 表与字节码（PE x64）
 - [`05-crypto-unpack/09-runtime-vm-detection-generic.md`](05-crypto-unpack/09-runtime-vm-detection-generic.md) — 运行时 VM 探测：跨实现通用的虚拟机识别与验证（零真机）
 - [`05-crypto-unpack/10-nested-vm-matryoshka-reverse-and-defeat.md`](05-crypto-unpack/10-nested-vm-matryoshka-reverse-and-defeat.md) — 多层嵌套虚拟机（Matryoshka-VM）逆向与破译方法论：从分发层逐级剥离到最内层代数约束求解
+- [`05-crypto-unpack/11-two-ring-vow-decoy-corridor-and-dual-verifier-reverse.md`](05-crypto-unpack/11-two-ring-vow-decoy-corridor-and-dual-verifier-reverse.md) — 双环互锁与欺骗走廊（two_ring_vow）：对抗诱导陷阱与确定性黄金输入发生器提取
 - [`05-crypto-unpack/vmp-architecture-generations.md`](05-crypto-unpack/vmp-architecture-generations.md) — 联网检索结果：VMP 验证技术与我的分析对照
 
 ### 06-ioc-extraction — IOC 提取（2）
