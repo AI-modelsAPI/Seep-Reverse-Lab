@@ -18,6 +18,8 @@ tags: ["payment", "race-condition", "database", "concurrency", "ledger", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-bypass", "ctf-website/12-payment/payment-logic", "ctf-website/24-database/02-sqli-advanced", "ctf-website/08-infra/race-cache-smuggling", "ctf-website/16-rate-limit/01-rate-limit-bypass"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Payment Race / Lost Update — 余额扣减丢失更新
 

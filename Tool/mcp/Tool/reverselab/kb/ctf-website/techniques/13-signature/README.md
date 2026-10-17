@@ -1,3 +1,9 @@
+---
+id: "ctf-website/techniques/13-signature/README"
+title: "13-signature — 签名伪造与验证绕过"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # 13-signature — 签名伪造与验证绕过
 
 > 签名 = 信任的数学表达。打破它 = 伪造信任。

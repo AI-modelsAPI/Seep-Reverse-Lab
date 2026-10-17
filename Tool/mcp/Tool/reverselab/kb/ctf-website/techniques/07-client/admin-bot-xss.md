@@ -16,6 +16,8 @@ tags: ["xss", "client-side", "csp", "ctf", "browser"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/07-client/js-runtime", "ctf-website/07-client/postmessage", "ctf-website/02-auth/jwt/07-theft-replay"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Admin Bot / XSS 实战
 

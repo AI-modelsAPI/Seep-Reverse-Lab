@@ -49,6 +49,8 @@ related_articles:
   - "apk-reverse/07-packer/01-obfuscation-detection"
   - "apk-reverse/07-packer/04-vmp-dump-trace-recovery"
   - "apk-reverse/07-packer/05-vmp-anti-debug-bypass"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # VMP/dex2c 加固识别与形态判定
 

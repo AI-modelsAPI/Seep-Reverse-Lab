@@ -6,6 +6,8 @@ compatibility: Requires a filesystem-based code agent or CLI with shell access, 
 allowed-tools: Bash Read Write Edit Glob Grep Task WebFetch WebSearch
 metadata:
   user-invocable: "false"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # Reverse Engineering

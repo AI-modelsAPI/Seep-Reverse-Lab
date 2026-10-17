@@ -18,6 +18,8 @@ tags: ["payment", "iap", "digital-goods", "virtual-currency", "license-key", "mo
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-bypass", "ctf-website/12-payment/payment-subscription"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Payment Digital Goods & IAP — 虚拟商品/内购攻击手册
 

@@ -16,6 +16,8 @@ tags: ["smali", "dex", "injection", "repack", "android-reverse", "java-layer"]
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Smali 代码注入与 DEX 修改
 

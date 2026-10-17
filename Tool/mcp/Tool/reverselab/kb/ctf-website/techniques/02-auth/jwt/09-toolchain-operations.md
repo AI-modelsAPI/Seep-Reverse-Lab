@@ -16,6 +16,8 @@ tags: ["authentication", "jwt", "toolchain", "operations", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/02-auth/jwt/00-overview"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # JWT 工具链、操作流程与结果矩阵

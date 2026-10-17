@@ -16,6 +16,8 @@ tags: ["cloud", "serverless", "aws", "privilege-escalation", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/10-cloud/aws-iam-privesc", "ctf-website/04-ssrf/ssrf", "ctf-website/10-cloud/ci-cd-pipeline"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Serverless / Lambda 攻击
 

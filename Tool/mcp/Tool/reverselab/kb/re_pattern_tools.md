@@ -1,3 +1,9 @@
+---
+id: "re_pattern_tools"
+title: "CTF Reverse - Tools Reference"
+evidence: "inferred"
+validated_by: "资源清单（未逐项实测）"
+---
 # CTF Reverse - Tools Reference
 
 ## Table of Contents

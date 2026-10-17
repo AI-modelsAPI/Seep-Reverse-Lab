@@ -1,4 +1,10 @@
-# APK Reverse 逆向工程知识库 — Android 逆向 23 篇
+---
+id: "apk-reverse/README"
+title: "APK Reverse 逆向工程知识库 — Android 逆向 30 篇"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
+# APK Reverse 逆向工程知识库 — Android 逆向 27 篇
 
 APK/DEX/SO 逆向技术库，共 **8 类、23 篇正文**。
 

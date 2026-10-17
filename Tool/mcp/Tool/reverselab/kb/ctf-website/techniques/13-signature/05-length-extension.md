@@ -19,6 +19,8 @@ tags: ["signature", "crypto", "hash", "length-extension", "md5", "sha256", "paym
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/13-signature/00-overview", "ctf-website/13-signature/02-implementation", "ctf-website/13-signature/04-canonicalization", "ctf-website/13-signature/06-replay-nonce", "ctf-website/12-payment/payment-callback-async", "ctf-website/12-payment/payment-logic"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Hash Length Extension 攻击 — 深度技术手册
 

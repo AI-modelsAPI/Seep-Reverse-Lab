@@ -16,6 +16,8 @@ tags: ["file-upload", "xxe", "lfi", "path-traversal", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/04-ssrf/ssrf", "ctf-website/03-injection/ssti", "ctf-website/24-database/04-config-exposure", "ctf-website/24-database/05-backup-log-leak", "ctf-website/12-payment/platform-fingerprints", "ctf-website/12-payment/payment-callback-async"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # File Upload / XXE / LFI / Path Traversal
 

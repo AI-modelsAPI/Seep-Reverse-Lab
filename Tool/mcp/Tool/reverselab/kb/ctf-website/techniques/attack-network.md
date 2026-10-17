@@ -1,3 +1,9 @@
+---
+id: "ctf-website/techniques/attack-network"
+title: "Web 攻击网"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # Web 攻击网
 
 线性攻击链不够。攻击网 = 多入口、多分叉、跨分类交织的图结构。每个节点是一个 Primitive，每条边是一个攻击步骤。

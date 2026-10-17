@@ -43,6 +43,8 @@ language: "zh-CN"
 last_updated: "2026-07-31"
 related_articles:
   - "pe-reverse/03-static-analysis/04-reclass-reconstruction"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 内存结构体逆向重建
 

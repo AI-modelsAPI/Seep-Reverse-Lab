@@ -49,6 +49,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # AI 驱动免杀：Shellcode 处理 + Loader 编写
 

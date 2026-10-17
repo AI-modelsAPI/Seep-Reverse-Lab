@@ -19,6 +19,8 @@ tags: ["signature", "key-management", "crypto", "brute-force", "information-disc
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: ["ctf-website/13-signature/00-overview", "ctf-website/13-signature/01-algorithm"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Key Attacks — 签名密钥攻击深度技术手册
 

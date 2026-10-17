@@ -62,6 +62,8 @@ related_articles:
   - "pe-reverse/10-license-keygen/02-validation-function-location"
   - "pe-reverse/10-license-keygen/05-keygen-frida-verification-loop"
   - "pe-reverse/05-crypto-unpack/01-pe-unpack-dump"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 注册码算法还原与 keygen 复现
 

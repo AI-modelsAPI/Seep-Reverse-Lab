@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-014_unity-il2cpp-reverse"
+title: "[种子] Unity IL2CPP 游戏逆向 → 还原元数据 + 修改逻辑"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] Unity IL2CPP 游戏逆向 → 还原元数据 + 修改逻辑
 
 ## 场景分类

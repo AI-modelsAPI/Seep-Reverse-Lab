@@ -20,6 +20,8 @@ tags: ["brute-force", "authentication", "mfa", "credential-stuffing", "active-di
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/16-rate-limit/01-rate-limit-bypass"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 高级暴力破解 — 凭证喷洒、MFA 疲劳、Hash 策略
 

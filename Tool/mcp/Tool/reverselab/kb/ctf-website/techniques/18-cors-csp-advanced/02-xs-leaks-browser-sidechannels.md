@@ -16,6 +16,8 @@ tags: ["xs-leaks", "browser", "side-channel", "cors", "timing-attack", "cache-pr
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # XS-Leaks 浏览器侧信道攻击

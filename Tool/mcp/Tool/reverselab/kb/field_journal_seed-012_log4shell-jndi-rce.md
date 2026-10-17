@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-012_log4shell-jndi-rce"
+title: "[种子] Log4Shell（CVE-2021-44228）JNDI 注入打 RCE"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] Log4Shell（CVE-2021-44228）JNDI 注入打 RCE
 
 ## 场景分类

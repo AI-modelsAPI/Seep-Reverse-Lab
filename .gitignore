@@ -1,6 +1,10 @@
 # ---------------------------------------------------------------------------
 # 本机隐私与运行凭据（绝不入库）
 # ---------------------------------------------------------------------------
+Tool/mcp/Tool/reverselab/kb_backup_*
+Tool/mcp/Tool/reverselab/ROLLBACK.sh
+Tool/mcp/seep_mcp_server.py.bak*
+
 # 由 generate-configs.ps1 生成的、含本机绝对路径的配置文件
 opencode.jsonc
 setup/cordis.generated.yml

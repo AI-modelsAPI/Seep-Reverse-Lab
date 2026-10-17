@@ -62,6 +62,8 @@ related_articles:
   - "pe-reverse/10-license-keygen/02-validation-function-location"
   - "pe-reverse/10-license-keygen/03-key-algorithm-recovery"
   - "pe-reverse/10-license-keygen/06-cloud-license-frida-hook"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 许可证机制分类与攻击路径选择
 

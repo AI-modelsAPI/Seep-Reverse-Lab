@@ -6,6 +6,8 @@ metadata:
   tags: [captcha, reverse, dsl-vm, wasm, frontend]
   date: 2026-07-05
   status: completed
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
 ---
 
 # 验证码系统完整逆向分析

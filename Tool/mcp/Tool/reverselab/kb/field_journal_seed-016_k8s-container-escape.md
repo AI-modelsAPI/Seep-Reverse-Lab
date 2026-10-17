@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-016_k8s-container-escape"
+title: "[种子] 容器逃逸 → 拿宿主机 root（cap_sys_admin / 特权容器 / docker.sock）"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] 容器逃逸 → 拿宿主机 root（cap_sys_admin / 特权容器 / docker.sock）
 
 ## 场景分类

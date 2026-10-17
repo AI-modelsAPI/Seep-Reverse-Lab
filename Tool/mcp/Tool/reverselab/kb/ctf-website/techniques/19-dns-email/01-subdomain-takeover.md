@@ -16,6 +16,8 @@ tags: ["dns", "subdomain", "takeover", "cloud", "cname", "aws", "azure", "dangli
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # 子域名接管深度

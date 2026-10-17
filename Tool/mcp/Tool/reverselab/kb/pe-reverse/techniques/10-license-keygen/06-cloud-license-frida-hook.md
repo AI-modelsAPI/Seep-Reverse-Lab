@@ -58,6 +58,8 @@ related_articles:
   - "pe-reverse/10-license-keygen/01-license-mechanism-classification"
   - "pe-reverse/10-license-keygen/05-keygen-frida-verification-loop"
   - "pe-reverse/04-dynamic-analysis/07-direct-syscall"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 云端授权识别与 Frida hook 替代路径
 

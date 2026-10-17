@@ -788,10 +788,10 @@ Java.perform(function () {{
 # ---------------------------------------------------------------------------
 @server.tool()
 def seep_kb_search(query: str, category: Optional[str] = None, limit: int = 10) -> str:
-    """在 ReverseLab 183+ 逆向与 Web/PE/CVE 攻防知识库中进行全文搜索，快速定位战术指南。
+    """在 ReverseLab 逆向与攻防知识库中进行智能多策略检索（支持分词、信号优先与可信度标记）。
 
     Args:
-        query: 检索关键词（例如 'JWT', 'SSRF', 'vmp', 'proto pollution', 'heap', 'yara'）
+        query: 检索关键词或描述性句子（例如 'raw deflate', 'DOS 头破坏', 'twinBASIC', 'JWT'）
         category: 可选限定目录分类（例如 'ctf-website', 'pe-reverse', 'apk-reverse', 'general'）
         limit: 最大返回文章数，默认 10
     """
@@ -800,34 +800,77 @@ def seep_kb_search(query: str, category: Optional[str] = None, limit: int = 10) 
         search_root = KB_DIR
 
     md_files = glob.glob(os.path.join(search_root, "**", "*.md"), recursive=True)
-    pat = query.lower()
-    
+    q_raw = query.strip()
+    q_lower = q_raw.lower()
+    tokens = [t.lower() for t in re.findall(r'[a-zA-Z0-9_-]{2,}|[一-鿿]{2,}', q_raw) if len(t) >= 2]
+    if not tokens:
+        tokens = [q_lower]
+
     hits = []
     for fpath in md_files:
         try:
             with open(fpath, "r", encoding="utf-8", errors="ignore") as fh:
                 content = fh.read()
-                title = ""
-                for line in content.splitlines()[:5]:
-                    if line.startswith("# "):
-                        title = line.lstrip("# ").strip()
-                        break
+                content_lower = content.lower()
+                fname_lower = Path(fpath).name.lower()
                 
+                title = ""
+                evidence = "unmarked"
+                signals_block = ""
+                
+                if content.startswith("---") and content.count("---") >= 2:
+                    fm = content.split("---", 2)[1]
+                    for ln in fm.splitlines():
+                        if ln.startswith("evidence:"):
+                            evidence = ln.split(":", 1)[1].strip().strip('\'"')
+                        elif ln.startswith("title:"):
+                            title = ln.split(":", 1)[1].strip().strip('\'"')
+                    m_sig = re.search(r"signals:(.*?)(?=\n\w+:|\n---)", fm, re.S)
+                    if m_sig:
+                        signals_block = m_sig.group(1).lower()
+
+                if not title:
+                    for line in content.splitlines()[:5]:
+                        if line.startswith("# "):
+                            title = line.lstrip("# ").strip()
+                            break
+                title = title or Path(fpath).stem
+                title_lower = title.lower()
+
                 score = 0
-                if pat in Path(fpath).name.lower():
-                    score += 10
-                if pat in title.lower():
-                    score += 8
-                if pat in content.lower():
-                    score += content.lower().count(pat)
+                if q_lower in fname_lower: score += 50
+                if q_lower in title_lower: score += 40
+                if q_lower in signals_block: score += 60
+                if q_lower in content_lower: score += 20 + min(content_lower.count(q_lower) * 2, 30)
+
+                tok_hits = 0
+                for tok in set(tokens):
+                    hit = False
+                    if tok in fname_lower: score += 15; hit = True
+                    if tok in title_lower: score += 12; hit = True
+                    if tok in signals_block: score += 20; hit = True
+                    if tok in content_lower: score += min(content_lower.count(tok), 10); hit = True
+                    if hit: tok_hits += 1
+                
+                if len(tokens) > 1 and tok_hits == len(tokens):
+                    score += 25
+
+                if evidence == "verified": score += 3
 
                 if score > 0:
                     rel = os.path.relpath(fpath, KB_DIR)
+                    first_idx = content_lower.find(q_lower)
+                    if first_idx == -1 and tokens:
+                        first_idx = content_lower.find(tokens[0])
+                    start = max(0, first_idx - 60) if first_idx != -1 else 0
+                    snippet = content[start:start + 260].strip().replace("\n", " ")
+
                     hits.append({
                         "path": rel.replace("\\", "/"),
-                        "title": title or Path(fpath).stem,
+                        "title": title,
+                        "evidence": evidence,
                         "score": score,
-                        "snippet": content[:300].strip().replace("\n", " ")
+                        "snippet": f"[{evidence.upper()}] " + snippet
                     })
         except Exception:
             pass
@@ -838,7 +881,6 @@ def seep_kb_search(query: str, category: Optional[str] = None, limit: int = 10) 
         return f"No articles found matching '{query}' in ReverseLab knowledge base."
 
     return json.dumps(top, indent=2, ensure_ascii=False)
-
 @server.tool()
 def seep_kb_read(article_path: str, max_chars: int = 6000) -> str:
     """读取 ReverseLab 知识库中某篇战术文档或技巧手册的全文内容。

@@ -19,6 +19,8 @@ tags: ["signature", "authentication", "ctf", "crypto", "jwt", "payment"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/13-signature/01-algorithm", "ctf-website/13-signature/02-implementation", "ctf-website/13-signature/03-key-attacks", "ctf-website/13-signature/04-canonicalization", "ctf-website/13-signature/06-replay-nonce", "ctf-website/12-payment/payment-callback-async", "ctf-website/12-payment/payment-logic"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Signature Forgery — 签名伪造与验证绕过全景手册
 

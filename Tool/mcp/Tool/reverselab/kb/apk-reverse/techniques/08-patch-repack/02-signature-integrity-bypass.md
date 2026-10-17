@@ -40,6 +40,8 @@ last_updated: "2026-07-03"
 related_articles:
   - "apk-reverse/08-patch-repack/01-so-injection-repack"
   - "apk-reverse/01-dex-java/01-smali-injection"
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # 签名与完整性检查绕过
 

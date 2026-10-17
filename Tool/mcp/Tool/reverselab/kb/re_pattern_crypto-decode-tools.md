@@ -1,3 +1,9 @@
+---
+id: "re_pattern_crypto-decode-tools"
+title: "加解密 / 编解码工具速查"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # 加解密 / 编解码工具速查
 
 > 逆向和 CTF 中经常遇到加密/编码/哈希数据。本文档按场景列出最实用的工具。

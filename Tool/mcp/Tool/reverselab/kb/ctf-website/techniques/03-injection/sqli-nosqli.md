@@ -16,6 +16,8 @@ tags: ["injection", "sqli", "nosqli", "waf-bypass", "database", "web-security", 
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # SQLi & NoSQLi (数据库注入高阶实战)

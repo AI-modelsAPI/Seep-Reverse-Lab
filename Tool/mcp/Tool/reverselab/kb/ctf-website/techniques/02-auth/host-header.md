@@ -16,6 +16,8 @@ tags: ["authentication", "host-header", "ssrf", "injection", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/04-ssrf/ssrf", "ctf-website/08-infra/web-cache-deception", "ctf-website/08-infra/race-cache-smuggling", "ctf-website/02-auth/oauth-sso", "ctf-website/13-signature/00-overview", "ctf-website/12-payment/payment-callback-async"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # Host Header 攻击

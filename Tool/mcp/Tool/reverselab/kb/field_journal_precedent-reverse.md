@@ -1,3 +1,9 @@
+---
+id: "field_journal_precedent-reverse"
+title: "逆向工程操作先例库"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 逆向工程操作先例库
 
 > **读序**：可执行授权门是 `case-init` / `scope.md`。本文件只说明日常逆向操作，不写 granted。

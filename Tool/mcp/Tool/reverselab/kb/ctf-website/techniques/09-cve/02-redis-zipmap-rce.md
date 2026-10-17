@@ -16,6 +16,8 @@ tags: ["cve", "redis", "rce", "memory-corruption", "ctf"]
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Redis/Valkey RESTORE：zipmap 长度前缀步长不一致（CVE-2026-25243）
 

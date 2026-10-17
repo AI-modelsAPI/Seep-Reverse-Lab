@@ -41,6 +41,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/24-database/00-overview", "ctf-website/24-database/05-backup-log-leak", "ctf-website/24-database/06-card-platform", "ctf-website/12-payment/payment-digital-goods", "ctf-website/12-payment/payment-email-bounce-idor"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Database Dump Cleaning — 泄露数据清洗方法论
 

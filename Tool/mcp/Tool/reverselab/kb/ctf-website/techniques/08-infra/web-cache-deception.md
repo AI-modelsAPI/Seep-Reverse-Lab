@@ -16,6 +16,8 @@ tags: ["caching", "cdn", "cache-deception", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/08-infra/race-cache-smuggling", "ctf-website/02-auth/host-header", "ctf-website/14-idor/01-idor-enumeration", "ctf-website/12-payment/payment-email-bounce-idor", "ctf-website/24-database/05-backup-log-leak"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Web Cache Deception
 

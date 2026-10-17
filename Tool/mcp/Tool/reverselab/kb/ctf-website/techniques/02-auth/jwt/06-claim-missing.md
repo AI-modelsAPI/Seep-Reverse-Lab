@@ -16,6 +16,8 @@ tags: ["authentication", "jwt", "claim-validation", "token-confusion", "web-secu
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/02-auth/jwt/00-overview", "ctf-website/02-auth/jwt/03-weak-key-bruteforce", "ctf-website/02-auth/jwt/07-theft-replay", "ctf-website/20-oauth-deep/01-oauth-attack-chains"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # JWT Claim 验证缺失 & Token 混用

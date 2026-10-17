@@ -16,6 +16,8 @@ tags: ["injection", "graphql", "api", "dos", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/17-api-attacks/01-api-discovery-leak", "ctf-website/14-idor/01-idor-enumeration", "ctf-website/14-idor/02-bac-business-logic", "ctf-website/15-mass-assignment/01-mass-assignment", "ctf-website/24-database/02-sqli-advanced", "ctf-website/12-payment/payment-logic"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # GraphQL 攻击实战

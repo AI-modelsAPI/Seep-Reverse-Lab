@@ -38,6 +38,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Slab 跨缓存释放：KFENCE 精确大小报告导致 SKB head 释放到错误缓存（CVE-2026-31429）
 

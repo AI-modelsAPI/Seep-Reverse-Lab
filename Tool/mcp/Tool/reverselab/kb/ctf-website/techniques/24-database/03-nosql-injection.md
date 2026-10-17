@@ -45,6 +45,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/24-database/01-sqli-fundamentals", "ctf-website/12-payment/payment-digital-goods", "ctf-website/12-payment/payment-callback-async"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # NoSQL Injection — NoSQL 注入攻击
 

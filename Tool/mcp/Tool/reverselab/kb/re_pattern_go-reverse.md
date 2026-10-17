@@ -1,3 +1,9 @@
+---
+id: "re_pattern_go-reverse"
+title: "Go 二进制逆向指南"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # Go 二进制逆向指南
 
 > Go 编译的二进制有独特的挑战：静态链接导致体积巨大、函数数量上万、字符串格式特殊、符号 strip 后恢复困难。

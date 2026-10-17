@@ -1,3 +1,9 @@
+---
+id: "ctf-website/checklists/evidence"
+title: "Evidence Checklist"
+evidence: "inferred"
+validated_by: "方法论/描述性（未标记实测）"
+---
 # Evidence Checklist
 
 For every meaningful finding, capture:

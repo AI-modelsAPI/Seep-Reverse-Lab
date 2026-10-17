@@ -38,6 +38,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # RDS zcopy double-free + io_uring dangling struct page*：PinTheft 内核 LPE（QVD-2026-27616）
 

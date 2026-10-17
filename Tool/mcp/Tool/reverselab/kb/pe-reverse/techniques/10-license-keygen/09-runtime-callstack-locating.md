@@ -35,6 +35,8 @@ difficulty: "advanced"
 platform: ["windows"]
 arch: ["x86"]
 created: "2026-09-27"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # 运行时调用栈定位法

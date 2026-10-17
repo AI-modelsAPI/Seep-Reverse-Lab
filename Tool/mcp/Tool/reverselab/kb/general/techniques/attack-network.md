@@ -1,3 +1,9 @@
+---
+id: "general/techniques/attack-network"
+title: "General 逆向攻击网"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # General 逆向攻击网
 
 跨平台逆向工程攻击网。覆盖密码算法、协议逆向、游戏对抗、方法论、固件/硬件/无线电/AI 安全。

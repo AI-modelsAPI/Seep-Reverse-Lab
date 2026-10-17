@@ -16,6 +16,8 @@ tags: ["injection", "redos", "timing-attack", "side-channel", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/16-rate-limit/02-brute-force-tactics", "ctf-website/08-infra/http2-attacks"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # ReDoS & 时序攻击

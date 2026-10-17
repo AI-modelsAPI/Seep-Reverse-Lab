@@ -16,6 +16,8 @@ tags: ["cloud", "kubernetes", "container-escape", "privilege-escalation", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/10-cloud/k8s-rbac-attack-paths", "ctf-website/10-cloud/container-runtime-escape", "ctf-website/10-cloud/aws-iam-privesc"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Kubernetes & 容器逃逸
 

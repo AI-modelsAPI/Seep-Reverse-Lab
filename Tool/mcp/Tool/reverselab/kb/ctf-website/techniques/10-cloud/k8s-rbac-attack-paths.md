@@ -16,6 +16,8 @@ tags: ["cloud", "kubernetes", "rbac", "privilege-escalation", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-03"
 related_articles: ["kubernetes-container.md", "aws-iam-privesc.md"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Kubernetes RBAC 攻击路径
 

@@ -16,6 +16,8 @@ tags: ["cloud", "ci-cd", "github-actions", "supply-chain", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-03"
 related_articles: ["ci-cd-pipeline.md", "../11-supply-chain/dependency-confusion.md"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # GitHub Actions 滥用路径
 

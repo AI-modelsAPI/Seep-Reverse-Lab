@@ -16,6 +16,8 @@ tags: ["cve", "nginx", "heap-overflow", "rce", "ctf", "exploit-development"]
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # NGINX rewrite 模块：set 缓冲区长度错配堆溢出（CVE-2026-42945）
 

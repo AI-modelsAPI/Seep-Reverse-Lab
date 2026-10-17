@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-08-20_apk-flutter-banner-ad-removal"
+title: "2026-08-20 Flutter APK 服务端驱动广告去除（第三方仿冒包）"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-08-20 Flutter APK 服务端驱动广告去除（第三方仿冒包）
 
 ## 场景分类

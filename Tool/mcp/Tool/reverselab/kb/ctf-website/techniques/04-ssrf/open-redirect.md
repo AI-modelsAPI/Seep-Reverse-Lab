@@ -16,6 +16,8 @@ tags: ["ssrf", "oauth", "redirect", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/20-oauth-deep/01-oauth-attack-chains", "ctf-website/04-ssrf/ssrf", "ctf-website/03-injection/hpp-crlf"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Open Redirect & Redirect Chain Attacks
 

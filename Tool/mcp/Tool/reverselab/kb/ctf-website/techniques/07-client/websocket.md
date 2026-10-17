@@ -16,6 +16,8 @@ tags: ["websocket", "client-side", "injection", "realtime", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/03-injection/graphql", "ctf-website/08-infra/race-cache-smuggling", "ctf-website/12-payment/payment-race-lost-update", "ctf-website/14-idor/01-idor-enumeration", "ctf-website/24-database/02-sqli-advanced"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # WebSocket 攻击实战
 

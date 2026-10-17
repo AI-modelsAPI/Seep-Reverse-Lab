@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-09-03_issue-pr-security-boundary-integration"
+title: "2026-09-03 多 Issue/PR 安全边界集成"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-09-03 多 Issue/PR 安全边界集成
 
 ## 场景

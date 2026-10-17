@@ -37,6 +37,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # CIFSwitch：cifs.spnego 身份混淆 → root 权限 NSS 加载（QVD-2026-29453）
 

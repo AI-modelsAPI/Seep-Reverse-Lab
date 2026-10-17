@@ -16,6 +16,8 @@ tags: ["crypto", "encryption", "ssl-pinning", "frida", "aes", "xor", "key-extrac
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 游戏数据加解密识别与绕过
 

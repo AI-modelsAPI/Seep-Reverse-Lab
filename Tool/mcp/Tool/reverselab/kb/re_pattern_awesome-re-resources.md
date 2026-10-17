@@ -1,3 +1,9 @@
+---
+id: "re_pattern_awesome-re-resources"
+title: "逆向工程参考资源汇总"
+evidence: "inferred"
+validated_by: "资源清单（未逐项实测）"
+---
 # 逆向工程参考资源汇总
 
 > 精选自多个 awesome 列表，按实用性排序。AI 在逆向分析时可参考这些资源获取方法论和工具指导。

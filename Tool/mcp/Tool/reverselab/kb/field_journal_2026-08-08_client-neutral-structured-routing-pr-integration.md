@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-08-08_client-neutral-structured-routing-pr-integration"
+title: "2026-08-08 平台无关结构化路由 PR 集成"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-08-08 平台无关结构化路由 PR 集成
 
 ## 场景分类

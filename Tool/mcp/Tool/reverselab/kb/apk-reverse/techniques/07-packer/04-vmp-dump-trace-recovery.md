@@ -53,6 +53,8 @@ related_articles:
   - "apk-reverse/07-packer/03-vmp-dex2c-detection"
   - "apk-reverse/07-packer/05-vmp-anti-debug-bypass"
   - "apk-reverse/02-native/06-jni-register-natives-tracing"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # VMP 脱壳与语义还原（Dump/Trace/Recovery）
 

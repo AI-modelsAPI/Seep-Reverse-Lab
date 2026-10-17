@@ -1,3 +1,9 @@
+---
+id: "ctf-website/checklists/attack-matrix"
+title: "Web CTF Attack Matrix"
+evidence: "inferred"
+validated_by: "方法论/描述性（未标记实测）"
+---
 # Web CTF Attack Matrix
 
 Use this after the first 30-minute baseline to avoid tunnel vision.

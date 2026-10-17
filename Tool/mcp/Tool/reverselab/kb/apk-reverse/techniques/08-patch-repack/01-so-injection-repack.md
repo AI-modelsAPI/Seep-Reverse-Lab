@@ -16,6 +16,8 @@ tags: ["so-injection", "repack", "apktool", "jni", "native", "integrity-bypass",
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Native SO 注入与 APK 重打包
 

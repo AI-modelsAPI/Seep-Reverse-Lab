@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-08-08_pr-value-triage-and-safe-integration"
+title: "2026-08-08 开放 PR 价值分级与安全集成"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-08-08 开放 PR 价值分级与安全集成
 
 ## 场景分类

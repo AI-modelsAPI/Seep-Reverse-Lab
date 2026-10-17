@@ -16,6 +16,8 @@ tags: ["cloud", "iac", "terraform", "secrets", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-03"
 related_articles: ["ci-cd-pipeline.md", "aws-iam-privesc.md"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Terraform State 与 IaC 凭证泄露
 

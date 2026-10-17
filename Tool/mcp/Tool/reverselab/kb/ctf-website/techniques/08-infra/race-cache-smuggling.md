@@ -16,6 +16,8 @@ tags: ["caching", "race-condition", "request-smuggling", "http", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-race-lost-update", "ctf-website/12-payment/payment-logic", "ctf-website/08-infra/web-cache-deception", "ctf-website/02-auth/host-header", "ctf-website/16-rate-limit/01-rate-limit-bypass"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Race Condition / Cache Poisoning / Request Smuggling
 

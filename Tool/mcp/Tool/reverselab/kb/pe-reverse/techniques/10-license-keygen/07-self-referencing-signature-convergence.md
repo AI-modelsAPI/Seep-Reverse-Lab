@@ -55,6 +55,8 @@ related_articles:
   - "pe-reverse/10-license-keygen/01-license-mechanism-classification"
   - "pe-reverse/10-license-keygen/02-validation-function-location"
   - "pe-reverse/10-license-keygen/03-key-algorithm-recovery"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 自引用签名嵌入与单步迭代收敛
 

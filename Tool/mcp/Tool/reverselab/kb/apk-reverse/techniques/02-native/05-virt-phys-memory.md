@@ -16,6 +16,8 @@ tags: ["pagemap", "physical-memory", "page-table", "kernel", "memory-read", "va-
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 虚拟地址 → 物理地址转换
 

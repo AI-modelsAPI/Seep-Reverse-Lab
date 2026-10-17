@@ -42,6 +42,8 @@ last_updated: "2026-07-03"
 related_articles:
   - "pe-reverse/04-dynamic-analysis/08-procmon-patterns"
   - "pe-reverse/06-ioc-extraction/01-ioc-extraction"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 持久化与启动链 IOC 提取
 

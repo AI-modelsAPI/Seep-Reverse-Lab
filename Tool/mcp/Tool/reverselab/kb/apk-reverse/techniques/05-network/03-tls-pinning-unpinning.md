@@ -41,6 +41,8 @@ last_updated: "2026-07-03"
 related_articles:
   - "apk-reverse/05-network/01-game-protocol-hook"
   - "apk-reverse/05-network/02-license-verification-bypass"
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # TLS Pinning 定位与 Unpinning
 

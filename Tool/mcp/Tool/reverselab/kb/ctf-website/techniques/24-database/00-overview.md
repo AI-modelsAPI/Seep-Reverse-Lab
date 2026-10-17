@@ -42,6 +42,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/24-database/01-sqli-fundamentals", "ctf-website/24-database/02-sqli-advanced", "ctf-website/24-database/03-nosql-injection", "ctf-website/24-database/04-config-exposure", "ctf-website/24-database/05-backup-log-leak", "ctf-website/24-database/06-card-platform", "ctf-website/24-database/07-data-cleaning", "ctf-website/12-payment/payment-logic"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Database Attack Surface — 数据库攻击全景与决策树
 

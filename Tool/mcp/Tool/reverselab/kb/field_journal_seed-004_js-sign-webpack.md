@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-004_js-sign-webpack"
+title: "[种子] JS 签名逆向（Webpack + AES + 时间戳）"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] JS 签名逆向（Webpack + AES + 时间戳）
 
 ## 场景分类

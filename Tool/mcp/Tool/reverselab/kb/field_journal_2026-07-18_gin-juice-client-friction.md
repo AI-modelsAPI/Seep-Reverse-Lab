@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-07-18_gin-juice-client-friction"
+title: "现代 Web 靶场摩擦 → skill 加固"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 现代 Web 靶场摩擦 → skill 加固
 
 > 日期：2026-07-18  

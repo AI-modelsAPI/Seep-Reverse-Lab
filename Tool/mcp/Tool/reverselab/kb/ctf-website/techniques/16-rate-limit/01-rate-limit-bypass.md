@@ -19,6 +19,8 @@ tags: ["rate-limit", "bypass", "ip-spoofing", "concurrency", "captcha", "web-sec
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/16-rate-limit/02-brute-force-tactics"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # 速率限制绕过 — IP 轮换、Header 操纵与应用层绕过
 

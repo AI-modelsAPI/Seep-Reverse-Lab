@@ -16,6 +16,8 @@ tags: ["authentication", "saml", "xml", "sso", "web-security", "signature-bypass
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # SAML 2.0 攻击

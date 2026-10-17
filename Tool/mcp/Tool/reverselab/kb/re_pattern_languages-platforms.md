@@ -1,3 +1,9 @@
+---
+id: "re_pattern_languages-platforms"
+title: "CTF Reverse - Platform & Framework-Specific Techniques"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # CTF Reverse - Platform & Framework-Specific Techniques
 
 ## Table of Contents

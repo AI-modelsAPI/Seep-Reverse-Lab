@@ -59,6 +59,8 @@ related_articles:
   - "pe-reverse/10-license-keygen/01-license-mechanism-classification"
   - "pe-reverse/10-license-keygen/03-key-algorithm-recovery"
   - "pe-reverse/08-patch/01-code-patching"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 签名链校验与公钥替换攻击
 

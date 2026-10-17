@@ -1,3 +1,9 @@
+---
+id: "re_pattern_kernel-driver-reverse"
+title: "内核驱动逆向参考"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # 内核驱动逆向参考
 
 > 覆盖 Windows/Linux 内核驱动逆向、Rootkit 分析、C/C++ 二进制模式识别。

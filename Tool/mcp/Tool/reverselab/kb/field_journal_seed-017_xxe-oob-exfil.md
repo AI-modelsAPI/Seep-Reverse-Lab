@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-017_xxe-oob-exfil"
+title: "[种子] XXE 盲注 OOB → 外带 /etc/passwd 与内网探测"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] XXE 盲注 OOB → 外带 /etc/passwd 与内网探测
 
 ## 场景分类

@@ -45,6 +45,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # 自定义混淆/加密还原方法论
 

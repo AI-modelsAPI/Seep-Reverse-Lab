@@ -1,3 +1,9 @@
+---
+id: "ctf-website/techniques/02-auth/jwt/README"
+title: "JWT 攻击技术库"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # JWT 攻击技术库
 
 ## 文件索引

@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-06-29_burp-mcp-full-test-and-fix"
+title: "2026-06-29 burp-mcp-full 全量测试与修复"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-06-29 burp-mcp-full 全量测试与修复
 
 ## 场景分类

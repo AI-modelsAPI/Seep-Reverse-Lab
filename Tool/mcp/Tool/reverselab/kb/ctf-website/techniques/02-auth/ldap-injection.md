@@ -16,6 +16,8 @@ tags: ["authentication", "ldap", "injection", "jndi", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/02-auth/oauth-sso", "ctf-website/16-rate-limit/02-brute-force-tactics", "ctf-website/24-database/04-config-exposure", "ctf-website/13-signature/00-overview", "ctf-website/14-idor/02-bac-business-logic"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # LDAP Injection

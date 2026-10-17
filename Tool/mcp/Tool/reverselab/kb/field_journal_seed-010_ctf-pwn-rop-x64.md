@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-010_ctf-pwn-rop-x64"
+title: "[种子] CTF Pwn — x64 栈溢出 + ROP 链调用 system"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] CTF Pwn — x64 栈溢出 + ROP 链调用 system
 
 ## 场景分类

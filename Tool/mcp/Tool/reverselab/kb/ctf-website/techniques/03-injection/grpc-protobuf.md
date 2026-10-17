@@ -16,6 +16,8 @@ tags: ["injection", "grpc", "protobuf", "microservices", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/03-injection/hpp-crlf", "ctf-website/17-api-attacks/01-api-discovery-leak"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # gRPC / Protobuf 攻击

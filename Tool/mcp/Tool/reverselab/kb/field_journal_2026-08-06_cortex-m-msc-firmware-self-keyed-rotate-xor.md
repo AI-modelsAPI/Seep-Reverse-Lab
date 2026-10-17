@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-08-06_cortex-m-msc-firmware-self-keyed-rotate-xor"
+title: "2026-08-06 Cortex-M 虚拟磁盘升级固件的自带掩码旋转/XOR 封装"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-08-06 Cortex-M 虚拟磁盘升级固件的自带掩码旋转/XOR 封装
 
 ## 场景分类

@@ -1,3 +1,9 @@
+---
+id: "re_pattern_languages-compiled"
+title: "CTF Reverse - Compiled Language Reversing (Go, Rust)"
+evidence: "verified"
+validated_by: "含实证标记"
+---
 # CTF Reverse - Compiled Language Reversing (Go, Rust)
 
 ## Table of Contents

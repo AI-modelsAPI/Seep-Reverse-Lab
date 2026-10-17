@@ -44,6 +44,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/24-database/02-sqli-advanced", "ctf-website/12-payment/payment-logic", "ctf-website/12-payment/platform-fingerprints"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # SQL Injection Core — SQL 注入基础与全类型覆盖
 

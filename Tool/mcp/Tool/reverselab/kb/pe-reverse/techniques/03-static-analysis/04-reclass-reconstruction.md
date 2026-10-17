@@ -43,6 +43,8 @@ language: "zh-CN"
 last_updated: "2026-07-31"
 related_articles:
   - "pe-reverse/03-static-analysis/01-struct-reconstruction"
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # ReClass 结构体实时重建
 

@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-008_apk-okhttp-ssl-pin-bypass"
+title: "[种子] APK Frida 绕过 OkHttp SSL Pinning"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] APK Frida 绕过 OkHttp SSL Pinning
 
 ## 场景分类

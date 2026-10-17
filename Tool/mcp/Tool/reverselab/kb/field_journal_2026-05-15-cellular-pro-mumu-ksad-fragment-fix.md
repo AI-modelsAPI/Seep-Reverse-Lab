@@ -3,6 +3,8 @@ name: cellular-pro-mumu-ksad-fragment-fix
 description: Cellular-Pro rebuilt APK on MuMu crashed first in Kuaishou/KSAd anti-fraud paths, then in app fragments whose lifecycle methods had been stubbed without calling Fragment super methods.
 metadata:
   type: project
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
 ---
 Cellular-Pro rebuilt APK on MuMu 12 required a two-layer fix: first short-circuit Kuaishou/KSAd device-fingerprint and ad-network paths that crashed under emulator translation, then restore Fragment lifecycle super-calls for app fragments that had been stubbed into no-ops.
 

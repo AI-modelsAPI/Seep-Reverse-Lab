@@ -16,6 +16,8 @@ tags: ["cloudflare", "recon", "cdn-bypass", "web-security", "dns", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # Cloudflare 绕过：寻找真实源服务器 IP

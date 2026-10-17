@@ -19,6 +19,8 @@ tags: ["bac", "access-control", "privilege-escalation", "spring-boot", "web", "c
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/14-idor/01-idor-enumeration", "ctf-website/17-api-attacks/01-api-discovery-leak", "ctf-website/15-mass-assignment/01-mass-assignment", "ctf-website/12-payment/payment-logic", "ctf-website/24-database/02-sqli-advanced"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 功能级访问控制缺失 (BAC) — 垂直越权与业务逻辑绕过
 

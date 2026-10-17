@@ -1,3 +1,9 @@
+---
+id: "pe-reverse/ai-findings/README"
+title: "PE Reverse AI Findings"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # PE Reverse AI Findings
 
 PE/Windows 逆向实战中可复用的发现、坑点、打法、工具选择经验。

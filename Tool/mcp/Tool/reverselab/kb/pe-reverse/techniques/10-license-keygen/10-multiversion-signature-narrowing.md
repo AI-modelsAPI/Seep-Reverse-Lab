@@ -57,6 +57,8 @@ tags:
   - "patch-migration"
   - "data-section"
   - "verification-discipline"
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # 多版本特征码收窄与数据段填充漂移陷阱

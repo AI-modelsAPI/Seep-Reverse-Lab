@@ -1,3 +1,9 @@
+---
+id: "AI-USAGE"
+title: "Knowledge Base AI Usage"
+evidence: "inferred"
+validated_by: "方法论/描述性（未标记实测）"
+---
 # Knowledge Base AI Usage
 
 `kb/` 是可复用战术知识库，不是单个 case 的证据目录。

@@ -17,6 +17,8 @@ tags: ["supply-chain", "dependency-confusion", "npm", "pypi", "ci-cd", "package-
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/10-cloud/ci-cd-pipeline", "ctf-website/10-cloud/github-actions-abuse-paths"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Dependency Confusion & 供应链攻击
 

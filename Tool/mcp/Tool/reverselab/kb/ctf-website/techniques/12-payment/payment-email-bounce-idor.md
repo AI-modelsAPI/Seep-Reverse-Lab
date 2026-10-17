@@ -18,6 +18,8 @@ tags: ["idor", "email-bounce", "information-disclosure", "payment", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/14-idor/01-idor-enumeration", "ctf-website/12-payment/platform-fingerprints", "ctf-website/12-payment/payment-digital-goods", "ctf-website/12-payment/payment-callback-async", "ctf-website/24-database/06-card-platform", "ctf-website/24-database/05-backup-log-leak"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 退信滥用 + 订单号授权绕过窃取卡密
 

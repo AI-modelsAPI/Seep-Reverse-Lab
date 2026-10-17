@@ -58,6 +58,8 @@ related_articles:
   - "pe-reverse/01-triage/01-aob-signature-scan"
   - "pe-reverse/10-license-keygen/02-validation-function-location"
   - "pe-reverse/08-patch/01-code-patching"
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # 跨版本 AOB 特征码迁移与双态修补
 

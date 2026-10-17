@@ -16,6 +16,8 @@ tags: ["authentication", "jwt", "algorithm-confusion", "web-security", "crypto",
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/02-auth/jwt/00-overview", "ctf-website/02-auth/jwt/04-kid-injection", "ctf-website/02-auth/jwt/05-jku-x5u-abuse", "ctf-website/13-signature/01-algorithm"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # JWT 算法混淆 (Algorithm Confusion)

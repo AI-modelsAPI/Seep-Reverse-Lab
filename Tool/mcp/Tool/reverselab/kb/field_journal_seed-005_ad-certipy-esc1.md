@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-005_ad-certipy-esc1"
+title: "[2026-03] AD CS ESC1 证书模板滥用 → 域管权限"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [2026-03] AD CS ESC1 证书模板滥用 → 域管权限
 
 ## 场景分类

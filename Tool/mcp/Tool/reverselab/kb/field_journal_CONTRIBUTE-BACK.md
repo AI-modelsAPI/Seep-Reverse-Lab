@@ -1,3 +1,9 @@
+---
+id: "field_journal_CONTRIBUTE-BACK"
+title: "社区进化：向主仓库贡献经验"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 社区进化：向主仓库贡献经验
 
 ## 机制说明

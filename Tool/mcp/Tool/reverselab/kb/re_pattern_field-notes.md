@@ -1,3 +1,9 @@
+---
+id: "re_pattern_field-notes"
+title: "Reverse Engineering Field Notes"
+evidence: "verified"
+validated_by: "含实证标记"
+---
 # Reverse Engineering Field Notes
 
 Detailed quick notes that support [`SKILL.md`](SKILL.md). Read this file after triage, not before.

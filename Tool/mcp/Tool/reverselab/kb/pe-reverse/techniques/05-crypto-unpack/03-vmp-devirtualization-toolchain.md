@@ -49,6 +49,8 @@ last_updated: "2026-08-09"
 related_articles:
   - "pe-reverse/05-crypto-unpack/01-pe-unpack-dump"
   - "pe-reverse/05-crypto-unpack/02-vmp-virtualization-analysis"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # VMP 去虚拟化工具链（Devirtualization）
 

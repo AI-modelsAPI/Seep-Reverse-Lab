@@ -1,3 +1,9 @@
+---
+id: "ctf-website/techniques/12-payment/README"
+title: "12-payment — 支付、订单与票务业务逻辑"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # 12-payment — 支付、订单与票务业务逻辑
 
 | 信号 | Technique |

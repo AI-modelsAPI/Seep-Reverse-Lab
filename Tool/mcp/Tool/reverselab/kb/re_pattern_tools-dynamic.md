@@ -1,3 +1,9 @@
+---
+id: "re_pattern_tools-dynamic"
+title: "CTF Reverse - Dynamic Analysis Tools"
+evidence: "inferred"
+validated_by: "资源清单（未逐项实测）"
+---
 # CTF Reverse - Dynamic Analysis Tools
 
 ## Table of Contents

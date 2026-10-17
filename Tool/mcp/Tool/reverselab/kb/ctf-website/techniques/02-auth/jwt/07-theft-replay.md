@@ -16,6 +16,8 @@ tags: ["authentication", "jwt", "token-theft", "xss", "replay", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/02-auth/jwt/06-claim-missing", "ctf-website/07-client/admin-bot-xss"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # JWT 窃取、重放与持久化

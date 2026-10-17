@@ -1,3 +1,9 @@
+---
+id: "README"
+title: "Knowledge Base"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # Knowledge Base
 
 AI 使用说明：[AI-USAGE.md](AI-USAGE.md)

@@ -19,6 +19,8 @@ tags: ["idor", "access-control", "enumeration", "graphql", "multi-tenant", "web"
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/14-idor/02-bac-business-logic", "ctf-website/12-payment/payment-email-bounce-idor", "ctf-website/17-api-attacks/01-api-discovery-leak", "ctf-website/12-payment/payment-logic", "ctf-website/24-database/02-sqli-advanced"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # IDOR 深度枚举与利用 — 水平/垂直越权实战方法论
 

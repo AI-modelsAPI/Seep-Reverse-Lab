@@ -19,6 +19,8 @@ tags: ["fingerprint", "platform", "cms", "php", "e-commerce", "recon"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-logic", "ctf-website/12-payment/payment-email-bounce-idor", "ctf-website/12-payment/payment-callback-async", "ctf-website/24-database/01-sqli-fundamentals", "ctf-website/24-database/05-backup-log-leak", "ctf-website/24-database/06-card-platform"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # PHP 发卡/电商平台指纹库
 

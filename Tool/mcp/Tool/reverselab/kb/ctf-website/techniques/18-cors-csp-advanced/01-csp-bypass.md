@@ -16,6 +16,8 @@ tags: ["csp", "xss", "jsonp", "cdn", "dom-clobbering", "strict-dynamic", "css-in
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # CSP 绕过全技术栈

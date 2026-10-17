@@ -16,6 +16,8 @@ tags: ["session", "fixation", "sso", "jwt", "redis", "cookie", "samesite"]
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # Session 固定与 SSO 劫持

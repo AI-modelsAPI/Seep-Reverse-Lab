@@ -16,6 +16,8 @@ tags: ["email", "spoofing", "spf", "dkim", "dmarc", "phishing", "smtp"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # 邮件伪造与 SPF / DKIM / DMARC

@@ -43,6 +43,8 @@ tags:
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/24-database/01-sqli-fundamentals", "ctf-website/24-database/05-backup-log-leak", "ctf-website/12-payment/platform-fingerprints", "ctf-website/13-signature/02-implementation"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Database Config Exposure — 数据库配置泄露
 

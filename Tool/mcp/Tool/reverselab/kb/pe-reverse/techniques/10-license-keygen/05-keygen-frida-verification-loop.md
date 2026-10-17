@@ -58,6 +58,8 @@ related_articles:
   - "pe-reverse/10-license-keygen/03-key-algorithm-recovery"
   - "pe-reverse/10-license-keygen/04-signature-chain-pubkey-swap"
   - "pe-reverse/04-dynamic-analysis/05-anti-debug-bypass"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # keygen 实机验证闭环（Frida 进程内替换）
 

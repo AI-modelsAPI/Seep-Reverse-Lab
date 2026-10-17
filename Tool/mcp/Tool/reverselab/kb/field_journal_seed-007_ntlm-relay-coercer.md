@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-007_ntlm-relay-coercer"
+title: "[2026-04] NTLM Relay + Coercer → 域管权限（无需密码）"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [2026-04] NTLM Relay + Coercer → 域管权限（无需密码）
 
 ## 场景分类

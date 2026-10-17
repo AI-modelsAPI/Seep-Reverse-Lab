@@ -1,3 +1,9 @@
+---
+id: "ctf-website/techniques/09-cve/README"
+title: "CVE 技术库（Web / 内核 / 本地）"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # CVE 技术库（Web / 内核 / 本地）
 
 ## 入口

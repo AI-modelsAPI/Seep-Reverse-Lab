@@ -1,3 +1,9 @@
+---
+id: "re_pattern_platforms"
+title: "CTF Reverse - Platform-Specific Reversing"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # CTF Reverse - Platform-Specific Reversing
 
 macOS/iOS, embedded/IoT firmware, kernel driver, and automotive reverse engineering.

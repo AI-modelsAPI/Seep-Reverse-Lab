@@ -18,6 +18,8 @@ tags: ["payment", "callback", "webhook", "async", "race-condition", "ssrf", "web
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-bypass", "ctf-website/13-signature/00-overview"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Payment Callback & Async Attack — 支付回调与异步攻击深度手册
 

@@ -1,3 +1,9 @@
+---
+id: "mumu_crash_guard_and_hotpatch_spec"
+title: "Windows 客户端复杂宿主内存热补丁与崩溃防御规范 (MuMu 实战提炼)"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # Windows 客户端复杂宿主内存热补丁与崩溃防御规范 (MuMu 实战提炼)
 
 本规范提炼自网易 MuMu 模拟器（包含 `MuMuNxMain.exe` 前台界面进程与 `MuMuNxService.exe` 后台守护服务）客户端本地化实战，专门解决现代复杂 C++ 宿主（Qt / CEF / 多进程架构）在内存热补丁过程中常见的崩溃与失效难题。

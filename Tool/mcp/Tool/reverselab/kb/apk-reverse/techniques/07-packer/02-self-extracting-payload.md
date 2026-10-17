@@ -16,6 +16,8 @@ tags: ["self-extracting", "payload", "shell-script", "embedding", "gzip", "extra
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # 自解压 Payload 与脚本嵌入
 

@@ -1,4 +1,10 @@
-# CTF Website 渗透测试知识库 — Web 攻击全表面 118 篇
+---
+id: "ctf-website/README"
+title: "CTF Website 渗透测试知识库 — Web 攻击全表面 136 篇"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
+# CTF Website 渗透测试知识库 — Web 攻击全表面 133 篇
 
 Web CTF / 网站攻防技术库，共 **26 类、118 篇正文**。
 

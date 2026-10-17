@@ -1,3 +1,9 @@
+---
+id: "field_journal__template"
+title: "[日期] [项目简称]"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [日期] [项目简称]
 
 ## 场景分类

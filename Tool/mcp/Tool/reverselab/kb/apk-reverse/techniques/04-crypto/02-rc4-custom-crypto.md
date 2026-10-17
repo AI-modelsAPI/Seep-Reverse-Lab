@@ -16,6 +16,8 @@ tags: ["rc4", "stream-cipher", "custom-crypto", "frida", "ghidra", "key-recovery
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 自定义对称加密：RC4 与组合模式
 

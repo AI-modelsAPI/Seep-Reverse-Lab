@@ -16,6 +16,8 @@ tags: ["deserialization", "gadget", "ctf", "injection"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/04-ssrf/ssrf", "ctf-website/03-injection/prototype-pollution"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Deserialization Vulnerabilities
 

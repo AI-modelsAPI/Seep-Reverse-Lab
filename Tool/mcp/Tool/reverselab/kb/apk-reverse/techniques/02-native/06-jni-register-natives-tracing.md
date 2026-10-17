@@ -39,6 +39,8 @@ last_updated: "2026-07-31"
 related_articles:
   - "apk-reverse/02-native/01-il2cpp-offset-discovery"
   - "apk-reverse/04-crypto/01-game-encryption-patterns"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # JNI RegisterNatives 追踪与 Native 入口还原
 

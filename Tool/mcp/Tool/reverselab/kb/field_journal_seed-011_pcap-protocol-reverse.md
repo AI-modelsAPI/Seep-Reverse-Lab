@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-011_pcap-protocol-reverse"
+title: "[种子] PCAP 自定义二进制协议逆向"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] PCAP 自定义二进制协议逆向
 
 ## 场景分类

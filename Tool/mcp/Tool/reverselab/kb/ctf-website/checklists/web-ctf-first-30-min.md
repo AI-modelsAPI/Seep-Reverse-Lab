@@ -1,3 +1,9 @@
+---
+id: "ctf-website/checklists/web-ctf-first-30-min"
+title: "Web CTF First 30 Minutes"
+evidence: "inferred"
+validated_by: "方法论/描述性（未标记实测）"
+---
 # Web CTF First 30 Minutes
 
 ## 0-5 min: Baseline

@@ -38,6 +38,8 @@ last_updated: "2026-07-03"
 related_articles:
   - "pe-reverse/02-pe-structure/01-pe-header-parsing"
   - "pe-reverse/04-dynamic-analysis/05-anti-debug-bypass"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # TLS Callback 定位与早期执行链
 

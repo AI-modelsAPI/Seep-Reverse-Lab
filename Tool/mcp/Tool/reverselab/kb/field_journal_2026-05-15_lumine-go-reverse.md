@@ -3,6 +3,8 @@ name: lumine-reverse-2026-05-15
 description: Go 1.24.5 TLS 分片代理 lumine v0.9.1 全量逆向恢复，含 7 个包源码重建
 metadata:
   type: project
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
 ---
 
 # lumine v0.9.1 — Go TLS 分片代理逆向

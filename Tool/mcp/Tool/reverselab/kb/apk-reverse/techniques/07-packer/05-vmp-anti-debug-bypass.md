@@ -48,6 +48,8 @@ related_articles:
   - "apk-reverse/07-packer/03-vmp-dex2c-detection"
   - "apk-reverse/07-packer/04-vmp-dump-trace-recovery"
   - "apk-reverse/06-dynamic/01-memory-rw-hook"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Android 反调试检测与绕过（VMP 场景）
 

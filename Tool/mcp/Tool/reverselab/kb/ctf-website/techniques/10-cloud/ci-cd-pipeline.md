@@ -16,6 +16,8 @@ tags: ["cloud", "ci-cd", "devsecops", "supply-chain", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/10-cloud/github-actions-abuse-paths", "ctf-website/11-supply-chain/dependency-confusion", "ctf-website/10-cloud/aws-iam-privesc"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # CI/CD Pipeline 攻击
 

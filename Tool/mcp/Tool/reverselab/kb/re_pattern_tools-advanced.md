@@ -1,3 +1,9 @@
+---
+id: "re_pattern_tools-advanced"
+title: "CTF Reverse - Advanced Tools & Deobfuscation"
+evidence: "inferred"
+validated_by: "资源清单（未逐项实测）"
+---
 # CTF Reverse - Advanced Tools & Deobfuscation
 
 Advanced tooling for commercial packers/protectors, binary diffing, deobfuscation frameworks, emulation, and symbolic execution beyond angr.

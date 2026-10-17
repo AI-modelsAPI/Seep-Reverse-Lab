@@ -1,3 +1,9 @@
+---
+id: "field_journal__index"
+title: "项目经验索引"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # 项目经验索引
 
 > 本文件用于在新任务开始前快速检索历史经验。
@@ -6,21 +12,24 @@
 
 ## 统计
 
-- 真实项目数：21
+- 真实项目数：24
 - 种子参考数：17
-- 总条目数：38
-- 最近更新：2026-09-03
+- 总条目数：41
+- 最近更新：2026-10-16
 
 ## 按场景分类
 
 ### APK / Android 逆向
 
+- [2026-10-16 r2pay-v1.0 现代加固靶场：无真机 Unicorn 仿真 + Smali CWE-602 打桩 + 远程 MCP 桥接真机交付](./field_journal_2026-10-16_r2pay-v1.0-hardened-so-emulation-and-device-delivery.md)
 - [2026-08-20 Flutter AOT 服务端驱动广告去除（Blutter + 等长字符串替换）](./2026-08-20_apk-flutter-banner-ad-removal.md)
 - [2026-05-15-cellular-pro-mumu-ksad-fragment-fix](./2026-05-15-cellular-pro-mumu-ksad-fragment-fix.md)
 - [[种子] seed-008_apk-okhttp-ssl-pin-bypass](./seed-008_apk-okhttp-ssl-pin-bypass.md)
 
 ### 二进制 / 固件 / CTF
 
+- [2026-10-16 VMProtect 官方 Demo 全版本：无真机自愈式仿真 → Handler 表提取 → 字节码反编译](./field_journal_2026-10-16_vmprotect-headless-selfhealing-handler-extraction.md)
+- [2026-10-15 twinBASIC 自复制样本：压缩资源还原 + 图内 flag 提取（高熵区=raw DEFLATE、Wine oleaut32 修复、字形签名）](./field_journal_2026-10-15_twinbasic-selfreplicate-deflate-recovery.md)
 - [2026-08-06_cortex-m-msc-firmware-self-keyed-rotate-xor](./2026-08-06_cortex-m-msc-firmware-self-keyed-rotate-xor.md)
 - [2026-07-22 Electron Bytenode 特权更新链分析](./2026-07-22_electron-bytenode-privileged-update-chain.md)
 - [2026-07-14_android-arm64-self-extract-source-recovery](./2026-07-14_android-arm64-self-extract-source-recovery.md)
@@ -86,6 +95,11 @@
 
 - [1 KiB 自带掩码 ROR/XOR、Cortex-M 向量 crib、跨固件验证](./2026-08-06_cortex-m-msc-firmware-self-keyed-rotate-xor.md)
 
+### VMProtect 虚拟化壳无真机仿真
+
+- [自愈式仿真（自动映射未映射页 + 忽略 int 3）、运行时 dispatch hook、256 项 handler 表提取、VM 指令集语义建模、3.10 相对偏移表](./field_journal_2026-10-16_vmprotect-headless-selfhealing-handler-extraction.md)
+- [ELF 版同源方法：无设备 Unicorn 仿真 + 重定位/init_array/TLS 三件事](./field_journal_2026-10-16_r2pay-v1.0-hardened-so-emulation-and-device-delivery.md)
+
 ## 实体倒排（按目标特征）
 
 ### 多宿主安全技能路由包
@@ -100,6 +114,11 @@
 ### Cortex-M USB MSC 升级器
 
 - [应用/驻留 bootloader 边界与虚拟磁盘写入链路](./2026-08-06_cortex-m-msc-firmware-self-keyed-rotate-xor.md)
+
+### VMProtect 保护 PE 与自定义嵌套虚拟机
+
+- [VMProtect 官方 Demo：节区名混淆（.vmp0/.vmp1 vs 随机名）、原始节区 raw=0（PACK 特征）、绝对地址表 vs 32 位相对偏移表分发差异、handler 轮换（vm_pop 66 变体）、`[rsp+rax]` 虚拟寄存器重映射](./field_journal_2026-10-16_vmprotect-headless-selfhealing-handler-extraction.md)
+- [Matryoshka-VM 5 层嵌套虚拟机逆向攻坚：五层套娃拓扑剥离、LCG/Xorshift/SSE 确定性解密链、单字节断言弱密码缺陷求导与 24 字节 Flag 提取](./field_journal_2026-10-16_matryoshka-nested-vm-defeat-and-flag-recovery.md)
 
 ## 使用说明
 

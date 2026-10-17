@@ -1,3 +1,9 @@
+---
+id: "ai-findings/README"
+title: "AI Findings"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # AI Findings
 
 这里不是命令流水账；只记录实战中可复用的发现、坑点、打法、工具选择经验。

@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-015_iot-firmware-uart"
+title: "[种子] IoT 路由器固件提取 + UART 串口拿 root"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] IoT 路由器固件提取 + UART 串口拿 root
 
 ## 场景分类

@@ -16,6 +16,8 @@ tags: ["cve", "path-traversal", "jwt", "authentication", "ctf"]
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Nezha Monitoring：路径遍历 + JWT 伪造管理员接管（CVE-2026-53519）
 

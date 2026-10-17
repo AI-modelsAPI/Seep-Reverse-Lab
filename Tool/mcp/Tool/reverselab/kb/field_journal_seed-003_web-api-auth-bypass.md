@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-003_web-api-auth-bypass"
+title: "[种子] Web API 未授权访问 + IDOR"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] Web API 未授权访问 + IDOR
 
 ## 场景分类

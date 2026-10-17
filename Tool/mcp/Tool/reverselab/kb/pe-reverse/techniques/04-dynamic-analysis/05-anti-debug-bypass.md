@@ -50,6 +50,8 @@ last_updated: "2026-08-09"
 related_articles:
   - "pe-reverse/05-crypto-unpack/02-vmp-virtualization-analysis"
   - "pe-reverse/05-crypto-unpack/03-vmp-devirtualization-toolchain"
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # 反调试检测与绕过
 

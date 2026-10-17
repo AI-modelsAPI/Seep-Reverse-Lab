@@ -19,6 +19,8 @@ tags: ["payment", "ctf", "logic-flaw", "state-machine", "idor", "database"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-bypass", "ctf-website/12-payment/payment-callback-async", "ctf-website/12-payment/payment-race-lost-update", "ctf-website/24-database/02-sqli-advanced", "ctf-website/08-infra/web-cache-deception"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Payment Logic Attacks — 支付类 Web CTF 技术手册
 

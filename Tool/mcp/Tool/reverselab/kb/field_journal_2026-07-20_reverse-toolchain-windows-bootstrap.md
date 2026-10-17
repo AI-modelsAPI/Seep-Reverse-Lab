@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-07-20_reverse-toolchain-windows-bootstrap"
+title: "2026-07-20 Windows 逆向工具链完整自举"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-07-20 Windows 逆向工具链完整自举
 
 ## 场景分类

@@ -1,3 +1,9 @@
+---
+id: "re_pattern_elf-analysis"
+title: "ELF 二进制深度分析参考"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # ELF 二进制深度分析参考
 
 > 逆向 Linux/Android ELF 文件时的结构解析、反分析对抗识别和分析技巧。

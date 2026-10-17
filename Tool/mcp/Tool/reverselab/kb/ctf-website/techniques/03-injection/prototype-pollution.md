@@ -16,6 +16,8 @@ tags: ["injection", "prototype-pollution", "nodejs", "template", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/07-client/postmessage", "ctf-website/07-client/js-runtime", "ctf-website/02-auth/jwt/06-claim-missing"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # Prototype Pollution (原型链污染)

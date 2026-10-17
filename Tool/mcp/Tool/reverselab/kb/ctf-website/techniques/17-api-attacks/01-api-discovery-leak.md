@@ -16,6 +16,8 @@ tags: ["api", "swagger", "graphql", "source-map", "mobile", "information-disclos
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/17-api-attacks/02-api-key-leak", "ctf-website/02-auth/jwt/00-overview", "ctf-website/03-injection/graphql", "ctf-website/24-database/01-sqli-fundamentals", "ctf-website/12-payment/payment-logic"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 
 # API 发现与信息泄露 — Swagger、GraphQL、Source Map 与移动端提取

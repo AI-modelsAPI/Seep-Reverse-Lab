@@ -1,3 +1,9 @@
+---
+id: "field_journal_precedent-auth"
+title: "授权预声明 — 减少 disclaimer 噪音，不能代替 scope.md"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 授权预声明 — 减少 disclaimer 噪音，不能代替 scope.md
 
 > 本文件只解决一件事：不要把「用户点了目标」当成已经授权。

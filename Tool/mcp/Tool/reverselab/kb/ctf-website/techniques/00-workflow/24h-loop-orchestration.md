@@ -35,6 +35,8 @@ language: "zh-CN"
 last_updated: "2026-07-03"
 related_articles:
   - "ctf-website/attack-network"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 24h Loop Orchestration
 

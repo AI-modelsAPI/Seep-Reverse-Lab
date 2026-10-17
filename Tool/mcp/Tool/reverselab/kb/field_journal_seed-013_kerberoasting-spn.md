@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-013_kerberoasting-spn"
+title: "[种子] Kerberoasting → 离线破解 → DA"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] Kerberoasting → 离线破解 → DA
 
 ## 场景分类

@@ -19,6 +19,8 @@ tags: ["reversing", "api", "ticketing", "state-machine", "token-analysis", "paym
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-logic", "ctf-website/12-payment/payment-race-lost-update", "ctf-website/12-payment/payment-callback-async", "ctf-website/24-database/02-sqli-advanced", "ctf-website/14-idor/02-bac-business-logic"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 # Ticket Rush API Reversing — 票务抢购状态机、Token 与风控参数
 

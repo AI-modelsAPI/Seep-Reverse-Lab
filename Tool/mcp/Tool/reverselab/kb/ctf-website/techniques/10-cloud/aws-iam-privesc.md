@@ -16,6 +16,8 @@ tags: ["cloud", "aws", "iam", "privilege-escalation", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-03"
 related_articles: ["serverless-lambda.md", "kubernetes-container.md", "ci-cd-pipeline.md"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # AWS IAM 权限枚举与提权路径
 

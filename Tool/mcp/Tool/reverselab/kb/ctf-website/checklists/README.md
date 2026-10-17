@@ -1,3 +1,9 @@
+---
+id: "ctf-website/checklists/README"
+title: "Web CTF Checklists AI Usage"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # Web CTF Checklists AI Usage
 
 这里是 Web CTF 可复用检查清单。

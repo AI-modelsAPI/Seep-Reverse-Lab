@@ -40,6 +40,8 @@ last_updated: "2026-07-03"
 related_articles:
   - "pe-reverse/03-static-analysis/02-disasm-jit-asm"
   - "pe-reverse/04-dynamic-analysis/03-external-memory-rw"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 动态 API 解析链还原
 

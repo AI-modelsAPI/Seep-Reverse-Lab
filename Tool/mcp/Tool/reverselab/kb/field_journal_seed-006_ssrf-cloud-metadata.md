@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-006_ssrf-cloud-metadata"
+title: "[2026-02] SSRF → 云元数据 → AK/SK → OSS 全量数据"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [2026-02] SSRF → 云元数据 → AK/SK → OSS 全量数据
 
 ## 场景分类

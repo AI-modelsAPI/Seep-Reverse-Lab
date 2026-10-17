@@ -19,6 +19,8 @@ tags: ["parameter-tampering", "race-condition", "coupon", "payment", "web-securi
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/15-mass-assignment/01-mass-assignment", "ctf-website/12-payment/payment-bypass"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 参数篡改全链 — 价格/数量/优惠券/竞态深度攻击
 

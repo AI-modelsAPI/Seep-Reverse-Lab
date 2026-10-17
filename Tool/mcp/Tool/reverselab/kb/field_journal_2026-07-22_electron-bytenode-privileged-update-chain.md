@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-07-22_electron-bytenode-privileged-update-chain"
+title: "2026-07-22 Electron Bytenode 特权更新链分析"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-07-22 Electron Bytenode 特权更新链分析
 
 ## 场景分类

@@ -16,6 +16,8 @@ tags: ["ssrf", "cloud", "injection", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/04-ssrf/open-redirect", "ctf-website/24-database/04-config-exposure", "ctf-website/24-database/03-nosql-injection", "ctf-website/24-database/02-sqli-advanced", "ctf-website/12-payment/payment-callback-async", "ctf-website/10-cloud/terraform-state-secrets"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # SSRF (Server-Side Request Forgery)
 

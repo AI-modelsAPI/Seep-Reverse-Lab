@@ -19,6 +19,8 @@ tags: ["payment", "bypass", "type-confusion", "race-condition", "web-security", 
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-logic", "ctf-website/12-payment/payment-callback-async"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Payment Bypass — 支付绕过深度技术手册
 

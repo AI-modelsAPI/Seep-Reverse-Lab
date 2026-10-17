@@ -16,6 +16,8 @@ tags: ["touch-input", "injection", "aimbot", "inputmanager", "frida", "accessibi
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 触摸输入 Hook 与注入分析
 

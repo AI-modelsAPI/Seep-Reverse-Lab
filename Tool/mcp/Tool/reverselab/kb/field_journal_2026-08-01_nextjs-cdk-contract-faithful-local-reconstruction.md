@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-08-01_nextjs-cdk-contract-faithful-local-reconstruction"
+title: "Next.js CDK 订单中心的契约保真本地重建"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # Next.js CDK 订单中心的契约保真本地重建
 
 > 日期：2026-08-01

@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-08-14_windows-powershell-native-exit-code-pr-review"
+title: "2026-08-14 Windows PowerShell 原生命令退出码 PR 审查"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-08-14 Windows PowerShell 原生命令退出码 PR 审查
 
 ## 场景分类

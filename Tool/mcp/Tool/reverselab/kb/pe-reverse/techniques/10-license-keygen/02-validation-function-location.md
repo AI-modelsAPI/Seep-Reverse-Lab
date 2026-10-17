@@ -57,6 +57,8 @@ related_articles:
   - "pe-reverse/10-license-keygen/01-license-mechanism-classification"
   - "pe-reverse/03-static-analysis/05-dynamic-api-resolution"
   - "pe-reverse/04-dynamic-analysis/05-anti-debug-bypass"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # 许可证校验函数定位
 

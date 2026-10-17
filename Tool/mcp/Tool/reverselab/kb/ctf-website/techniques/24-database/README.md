@@ -1,3 +1,9 @@
+---
+id: "ctf-website/techniques/24-database/README"
+title: "24-database — 数据库攻击技术"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # 24-database — 数据库攻击技术
 
 ## 文档索引

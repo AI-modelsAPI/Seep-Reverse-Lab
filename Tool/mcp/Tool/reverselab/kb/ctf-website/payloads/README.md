@@ -1,3 +1,9 @@
+---
+id: "ctf-website/payloads/README"
+title: "Web CTF Payload Knowledge AI Usage"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # Web CTF Payload Knowledge AI Usage
 
 这里存放 payload 思路和种子，不是单题 exploit。

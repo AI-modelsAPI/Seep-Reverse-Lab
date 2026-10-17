@@ -16,6 +16,8 @@ tags: ["oauth", "pkce", "csrf", "redirect-uri", "token", "authorization", "sso",
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # OAuth 2.0 攻击全链

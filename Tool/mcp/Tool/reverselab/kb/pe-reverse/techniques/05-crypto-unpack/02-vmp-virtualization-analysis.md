@@ -50,6 +50,8 @@ related_articles:
   - "pe-reverse/05-crypto-unpack/01-pe-unpack-dump"
   - "pe-reverse/05-crypto-unpack/03-vmp-devirtualization-toolchain"
   - "pe-reverse/04-dynamic-analysis/05-anti-debug-bypass"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # VMP 虚拟化原理与 VM Entry 定位
 

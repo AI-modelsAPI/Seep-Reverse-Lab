@@ -1,3 +1,9 @@
+---
+id: "field_journal_seed-009_ios-jailbreak-detect-bypass"
+title: "[种子] iOS 越狱检测绕过 + 抓包"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # [种子] iOS 越狱检测绕过 + 抓包
 
 ## 场景分类

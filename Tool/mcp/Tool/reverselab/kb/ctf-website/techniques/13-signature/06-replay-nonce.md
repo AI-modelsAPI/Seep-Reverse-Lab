@@ -19,6 +19,8 @@ tags: ["signature", "replay", "nonce", "race-condition", "time-based", "payment"
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/13-signature/00-overview", "ctf-website/13-signature/01-algorithm", "ctf-website/13-signature/04-canonicalization", "ctf-website/12-payment/payment-callback-async", "ctf-website/12-payment/payment-race-lost-update", "ctf-website/24-database/02-sqli-advanced"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Replay / Nonce / Timestamp — 重放攻击深度技术手册
 

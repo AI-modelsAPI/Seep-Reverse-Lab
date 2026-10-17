@@ -16,6 +16,8 @@ tags: ["injection", "hpp", "crlf", "parser-differential", "ctf"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/04-ssrf/ssrf", "ctf-website/08-infra/race-cache-smuggling", "ctf-website/20-oauth-deep/01-oauth-attack-chains"]
+evidence: "verified"
+validated_by: "含实证标记"
 ---
 
 # HPP / CRLF Injection / Header Injection

@@ -1,3 +1,9 @@
+---
+id: "windows/techniques/README"
+title: "Windows 技术库"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # Windows 技术库
 
 Windows PE/二进制逆向技术库。

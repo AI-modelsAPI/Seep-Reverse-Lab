@@ -1,3 +1,9 @@
+---
+id: "ctf-website/techniques/11-dos/README"
+title: "DoS 拒绝服务技术库"
+evidence: "inferred"
+validated_by: "索引/目录类文档"
+---
 # DoS 拒绝服务技术库
 
 CVE 实战型拒绝服务攻击技术。

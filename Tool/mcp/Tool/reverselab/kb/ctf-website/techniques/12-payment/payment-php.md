@@ -19,6 +19,8 @@ tags: ["php", "payment", "type-juggling", "deserialization", "laravel", "framewo
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/12-payment/payment-bypass", "ctf-website/13-signature/02-implementation"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # PHP Payment Attacks — PHP 支付专项攻击手册
 

@@ -1,3 +1,9 @@
+---
+id: "re_pattern_patterns-ctf"
+title: "CTF Reverse - Competition-Specific Patterns (Part 1)"
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
+---
 # CTF Reverse - Competition-Specific Patterns (Part 1)
 
 ## Table of Contents

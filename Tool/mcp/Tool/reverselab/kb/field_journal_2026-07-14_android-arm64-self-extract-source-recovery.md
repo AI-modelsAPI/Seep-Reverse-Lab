@@ -1,3 +1,9 @@
+---
+id: "field_journal_2026-07-14_android-arm64-self-extract-source-recovery"
+title: "2026-07-14 Android ARM64 自解压程序源码恢复"
+evidence: "verified"
+validated_by: "实战记录（含样本与实践过程）"
+---
 # 2026-07-14 Android ARM64 自解压程序源码恢复
 
 ## 场景分类

@@ -16,6 +16,8 @@ tags: ["client-side", "oauth", "xss", "ctf", "browser"]
 language: "zh-CN"
 last_updated: "2026-07-04"
 related_articles: ["ctf-website/07-client/admin-bot-xss", "ctf-website/20-oauth-deep/01-oauth-attack-chains"]
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # PostMessage / 跨域通信攻击
 

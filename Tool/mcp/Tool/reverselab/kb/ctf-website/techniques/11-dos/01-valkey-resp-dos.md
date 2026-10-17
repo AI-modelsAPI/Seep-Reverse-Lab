@@ -16,6 +16,8 @@ tags: ["dos", "CVE", "valkey", "redis", "protocol", "pre-auth", "infrastructure"
 language: "zh-CN"
 last_updated: "2026-06-25"
 related_articles: []
+evidence: "reproduced"
+validated_by: "含可复现代码/命令"
 ---
 # Valkey RESP 协议：预认证断言失败 DoS（CVE-2026-27623）
 
