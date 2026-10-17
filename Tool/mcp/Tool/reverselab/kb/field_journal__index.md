@@ -122,6 +122,7 @@ validated_by: "索引/目录类文档"
 - [two_ring_vow (两枚魔戒) 攻坚手记：防诱导欺骗走廊识破、双环互锁拆解、四重核验机同态双调用与确定性黄金标准发生器提取](./field_journal_2026-10-16_two-ring-vow-anti-analysis-decoy-and-gold-generator-recovery.md)
 - [VAULT-Nested-Helix 攻坚手记：Aegis 保护壳动态 API 逆向、内存无损转储、8x8 迷宫唯一解证明与双螺旋嵌套 VM 求解](./field_journal_2026-10-16_vault-nested-helix-aegis-packer-maze-and-vm-recovery.md)
 - [Inside-the-Machine 攻坚手记：24KB 极简自定义 VM 逆向、死代码花指令消除、Opcode 滚动解码置换与代数约束求根](./field_journal_2026-10-16_inside-the-machine-anti-debug-and-custom-vm-recovery.md)
+- [AegisShield 攻坚手记：Rust 反逆向分析、HWID 虚拟机绑定、PCG 随机数解混淆与 AES-256-CTR Flag 提取](./field_journal_2026-10-16_aegisshield-rust-hwid-vm-and-aes-ctr-recovery.md)
 
 ## 使用说明
 

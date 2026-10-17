@@ -1,7 +1,7 @@
 # 逆向信号 → 文档映射总表（自动生成）
 
-> 生成: 2026-10-17 11:30  |  由 `kb_maintain.py --signals` 产生
-> 唯一信号: 2192  |  覆盖文档: 216
+> 生成: 2026-10-17 14:40  |  由 `kb_maintain.py --signals` 产生
+> 唯一信号: 2203  |  覆盖文档: 217
 
 ## 用法
 
@@ -44,6 +44,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `5-bit` | pe-reverse | pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `511 字节` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/09-runtime-vm-detection-generic.md |
 | `636` | ctf-website/ldap | ctf-website/techniques/02-auth/ldap-injection.md |
+| `71 步虚拟机` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `== vs ===` | ctf-website/signature-implementation | ctf-website/techniques/13-signature/02-implementation.md |
 | `["alg:none", "none算法", "无签名", "签名绕过", "jwt", "jwt_tool"]` | ctf-website | ctf-website/techniques/02-auth/jwt/01-alg-none.md |
 | `["algorithm downgrade", "算法降级", "alg none", "sign_type", "rs256 hs256", "jwt confusion", "md5签名", "签名编码"]` | ctf-website | ctf-website/techniques/13-signature/01-algorithm.md |
@@ -179,8 +180,10 @@ seep_kb_read("<文档路径>")             # 读全文
 | `adminer` | ctf-website/database-attacks | ctf-website/techniques/24-database/00-overview.md<br>ctf-website/techniques/24-database/01-sqli-fundamentals.md<br>ctf-website/techniques/24-database/02-sqli-advanced.md |
 | `adminer /adminer.php` | ctf-website | ctf-website/techniques/24-database/05-backup-log-leak.md |
 | `aegis 保护壳` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/12-vault-nested-helix-aegis-packer-maze-and-vm-defeat.md |
+| `aegisshield` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `aes` | apk-reverse/crypto, general/crypto | apk-reverse/techniques/04-crypto/01-game-encryption-patterns.md<br>apk-reverse/techniques/04-crypto/02-rc4-custom-crypto.md<br>general/techniques/crypto/01-algorithm-identification.md |
 | `aes sbox / te0` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/05-high-entropy-compression-vs-crypto-routing.md |
+| `aes-256-ctr` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `agate` | ctf-website/paywall-bypass | ctf-website/techniques/23-paywall-bypass/01-paywall-detection-bypass.md<br>ctf-website/techniques/23-paywall-bypass/02-http-header-manipulation.md<br>ctf-website/techniques/23-paywall-bypass/03-network-rule-blocking.md |
 | `ai gateway` | ctf-website/race-lost-update | ctf-website/techniques/12-payment/payment-race-lost-update.md |
 | `ai_manifest` | ctf-website | ctf-website/techniques/00-workflow/24h-loop-orchestration.md |
@@ -375,6 +378,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `cloudflare 1010` | general | general/methodology/02-remote-mcp-device-bridge-deployment.md |
 | `cloudfront` | ctf-website/cloudflare-bypass | ctf-website/techniques/01-recon/cloudflare-bypass.md |
 | `cloudfront takeover` | ctf-website/dns-email | ctf-website/techniques/19-dns-email/01-subdomain-takeover.md<br>ctf-website/techniques/19-dns-email/02-email-spoofing.md |
+| `cmo{` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `cname takeover` | ctf-website/dns-email | ctf-website/techniques/19-dns-email/01-subdomain-takeover.md<br>ctf-website/techniques/19-dns-email/02-email-spoofing.md |
 | `cobalt strike` | pe-reverse/av-evasion | pe-reverse/techniques/09-av-evasion/01-ai-powered-evasion.md |
 | `code patch` | pe-reverse/patch | pe-reverse/techniques/08-patch/01-code-patching.md |
@@ -476,6 +480,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `cvss` | ctf-website/cve | ctf-website/techniques/09-cve/cve-correlation-graph.md<br>ctf-website/techniques/09-cve/cve-workflow.md<br>ctf-website/techniques/09-cve/multi-cve-chain-playbook.md |
 | `cwe` | ctf-website/cve | ctf-website/techniques/09-cve/cve-correlation-graph.md<br>ctf-website/techniques/09-cve/cve-workflow.md<br>ctf-website/techniques/09-cve/multi-cve-chain-playbook.md |
 | `cwe-200` | ctf-website/payment-bounce-idor | ctf-website/techniques/12-payment/payment-email-bounce-idor.md |
+| `cwe-602` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `cwe-639` | ctf-website/idor, ctf-website/payment-bounce-idor | ctf-website/techniques/12-payment/payment-email-bounce-idor.md<br>ctf-website/techniques/14-idor/01-idor-enumeration.md<br>ctf-website/techniques/14-idor/02-bac-business-logic.md |
 | `cwe-862` | ctf-website/payment-bounce-idor | ctf-website/techniques/12-payment/payment-email-bounce-idor.md |
 | `cwe-915` | ctf-website/mass-assignment | ctf-website/techniques/15-mass-assignment/01-mass-assignment.md<br>ctf-website/techniques/15-mass-assignment/02-parameter-tampering.md |
@@ -794,6 +799,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `https` | apk-reverse/network | apk-reverse/techniques/05-network/01-game-protocol-hook.md<br>apk-reverse/techniques/05-network/02-license-verification-bypass.md |
 | `hub approval` | general | general/methodology/02-remote-mcp-device-bridge-deployment.md |
 | `hunter` | ctf-website/fofa | ctf-website/techniques/01-recon/fofa-hunting.md |
+| `hwid 绑定` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `hxd` | pe-reverse/patch | pe-reverse/techniques/08-patch/01-code-patching.md |
 | `iac` | ctf-website/ci-cd | ctf-website/techniques/10-cloud/ci-cd-pipeline.md<br>ctf-website/techniques/10-cloud/github-actions-abuse-paths.md<br>ctf-website/techniques/10-cloud/terraform-state-secrets.md |
 | `iam role` | ctf-website/cloud-serverless | ctf-website/techniques/10-cloud/aws-iam-privesc.md<br>ctf-website/techniques/10-cloud/serverless-lambda.md |
@@ -929,6 +935,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `kubelet` | ctf-website/kubernetes | ctf-website/techniques/10-cloud/container-runtime-escape.md<br>ctf-website/techniques/10-cloud/k8s-rbac-attack-paths.md<br>ctf-website/techniques/10-cloud/kubernetes-container.md |
 | `kubernetes` | ctf-website/kubernetes | ctf-website/techniques/10-cloud/container-runtime-escape.md<br>ctf-website/techniques/10-cloud/k8s-rbac-attack-paths.md<br>ctf-website/techniques/10-cloud/kubernetes-container.md |
 | `kubernetes resourcequota 耗尽` | ctf-website | ctf-website/techniques/22-dos/11-cloud-container-dos.md |
+| `kvm 检测` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `lambda` | ctf-website/cloud-serverless | ctf-website/techniques/10-cloud/aws-iam-privesc.md<br>ctf-website/techniques/10-cloud/serverless-lambda.md |
 | `laravel` | ctf-website/payment-php | ctf-website/techniques/12-payment/payment-php.md |
 | `laravel fillable` | ctf-website/mass-assignment | ctf-website/techniques/15-mass-assignment/01-mass-assignment.md<br>ctf-website/techniques/15-mass-assignment/02-parameter-tampering.md |
@@ -1193,6 +1200,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `paywall overlay div.paywall` | ctf-website | ctf-website/techniques/23-paywall-bypass/01-paywall-detection-bypass.md |
 | `paywall overlay position:fixed z-index:9999` | ctf-website | ctf-website/techniques/23-paywall-bypass/05-dom-css-manipulation.md |
 | `pbkdf` | general/crypto | general/techniques/crypto/01-algorithm-identification.md<br>general/techniques/crypto/02-custom-obfuscation-reverse.md |
+| `pcg 随机数` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `pclntab` | pe-reverse | pe-reverse/techniques/03-static-analysis/06-go-rust-binary-reconstruction.md |
 | `pdf generation` | ctf-website/file-attacks | ctf-website/techniques/06-file-attacks/file-upload-xxe-lfi.md |
 | `pe loader` | pe-reverse | pe-reverse/techniques/04-dynamic-analysis/06-manual-map-injection.md |
@@ -1406,6 +1414,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `runtime.g` | pe-reverse | pe-reverse/techniques/03-static-analysis/06-go-rust-binary-reconstruction.md |
 | `runtime.morestack` | pe-reverse | pe-reverse/techniques/03-static-analysis/06-go-rust-binary-reconstruction.md |
 | `rust binary` | pe-reverse | pe-reverse/techniques/03-static-analysis/06-go-rust-binary-reconstruction.md |
+| `rust 逆向` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `rustc` | pe-reverse | pe-reverse/techniques/03-static-analysis/06-go-rust-binary-reconstruction.md |
 | `s-box` | general/crypto | general/techniques/crypto/01-algorithm-identification.md<br>general/techniques/crypto/02-custom-obfuscation-reverse.md |
 | `s-box fingerprinting` | general | general/techniques/crypto/01-algorithm-identification.md |
@@ -1950,6 +1959,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `字节替换` | pe-reverse | pe-reverse/techniques/08-patch/01-code-patching.md |
 | `定期付款` | ctf-website/payment-subscription | ctf-website/techniques/12-payment/payment-subscription.md |
 | `实时分析` | pe-reverse | pe-reverse/techniques/03-static-analysis/04-reclass-reconstruction.md |
+| `客户端鉴权旁路验证` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `容器 pid namespace 耗尽` | ctf-website | ctf-website/techniques/22-dos/11-cloud-container-dos.md |
 | `宽字节` | ctf-website/database-attacks | ctf-website/techniques/24-database/00-overview.md<br>ctf-website/techniques/24-database/01-sqli-fundamentals.md<br>ctf-website/techniques/24-database/02-sqli-advanced.md |
 | `宽字节 %bf%27 gbk` | ctf-website | ctf-website/techniques/24-database/01-sqli-fundamentals.md |
@@ -1978,6 +1988,7 @@ seep_kb_read("<文档路径>")             # 读全文
 | `弹窗触发条件` | pe-reverse, pe-reverse/license-keygen | pe-reverse/techniques/10-license-keygen/01-license-mechanism-classification.md<br>pe-reverse/techniques/10-license-keygen/02-validation-function-location.md<br>pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `循环移位` | pe-reverse | pe-reverse/techniques/10-license-keygen/03-key-algorithm-recovery.md |
 | `微代码反混淆` | pe-reverse | pe-reverse/techniques/03-static-analysis/07-ida-microcode-mba-deobfuscation-d810.md |
+| `微创补丁` | pe-reverse | pe-reverse/techniques/05-crypto-unpack/14-aegisshield-rust-hwid-vm-and-aes-ctr-flag-recovery.md |
 | `微验` | apk-reverse/network | apk-reverse/techniques/05-network/01-game-protocol-hook.md<br>apk-reverse/techniques/05-network/02-license-verification-bypass.md |
 | `忽略反调试陷阱` | general, general/methodology | general/methodology/01-headless-emulation-windows-android-handbook.md<br>general/methodology/02-remote-mcp-device-bridge-deployment.md<br>general/techniques/methodology/01-reverse-checklist-first-30-min.md |
 | `慢查询 pg_stat_activity` | ctf-website | ctf-website/techniques/22-dos/13-database-dos.md |
