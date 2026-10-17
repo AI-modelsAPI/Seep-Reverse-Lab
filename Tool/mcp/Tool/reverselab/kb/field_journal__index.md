@@ -121,6 +121,7 @@ validated_by: "索引/目录类文档"
 - [Matryoshka-VM 5 层嵌套虚拟机逆向攻坚：五层套娃拓扑剥离、LCG/Xorshift/SSE 确定性解密链、单字节断言弱密码缺陷求导与 24 字节 Flag 提取](./field_journal_2026-10-16_matryoshka-nested-vm-defeat-and-flag-recovery.md)
 - [two_ring_vow (两枚魔戒) 攻坚手记：防诱导欺骗走廊识破、双环互锁拆解、四重核验机同态双调用与确定性黄金标准发生器提取](./field_journal_2026-10-16_two-ring-vow-anti-analysis-decoy-and-gold-generator-recovery.md)
 - [VAULT-Nested-Helix 攻坚手记：Aegis 保护壳动态 API 逆向、内存无损转储、8x8 迷宫唯一解证明与双螺旋嵌套 VM 求解](./field_journal_2026-10-16_vault-nested-helix-aegis-packer-maze-and-vm-recovery.md)
+- [Inside-the-Machine 攻坚手记：24KB 极简自定义 VM 逆向、死代码花指令消除、Opcode 滚动解码置换与代数约束求根](./field_journal_2026-10-16_inside-the-machine-anti-debug-and-custom-vm-recovery.md)
 
 ## 使用说明
 

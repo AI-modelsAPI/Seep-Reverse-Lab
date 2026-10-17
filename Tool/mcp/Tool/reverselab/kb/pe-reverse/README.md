@@ -1,6 +1,6 @@
 ---
 id: "pe-reverse/README"
-title: "PE Reverse 逆向工程知识库 — Windows 二进制分析 50 篇"
+title: "PE Reverse 逆向工程知识库 — Windows 二进制分析 51 篇"
 evidence: "inferred"
 validated_by: "索引/目录类文档"
 ---
